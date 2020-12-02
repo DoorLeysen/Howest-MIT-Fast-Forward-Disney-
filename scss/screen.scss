@@ -19,6 +19,7 @@
 @import "generic.normalize";
 @import "../bootstrap/scss/bootstrap";
 
+
 /*------------------------------------*\
   #ELEMENTS
 \*------------------------------------*/
@@ -31,7 +32,12 @@
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
+
 @import 'components.table';
+
+
+@import "component.form";
+@import "component.edit";
 
 /*------------------------------------*\
   #UTILITIES
