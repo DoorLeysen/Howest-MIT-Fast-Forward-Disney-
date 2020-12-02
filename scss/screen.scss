@@ -31,8 +31,14 @@
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
-@import "component.form";
-@import "_component.edit";
+
+
+@import 'components.table';
+
+
+@import "components.form";
+@import "components.edit";
+
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
