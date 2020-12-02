@@ -9,28 +9,70 @@
   &__title {
     border: none;
     border-bottom: 2px solid $color-white;
+    margin-bottom: 5rem;
   }
 
   &__row {
 
     &--number {
-        width: 163px;
+      width: 150px;
+      margin-right: 0rem;
     }
-    &--name {
-        width: 227px;
-    }
-    &--mail {
-        width: 395px;
-    }
-    &--user-since {
-        width: 278px;
-    }
-    &--subscription {
-        width: 184px;
-    }
-    &--edit {
-        width: 119px;
 
+    &--name {
+      width: 270px;
+      margin-right: 0rem;
+    }
+
+    &--mail {
+      width: 360px;
+      margin-right: 0rem;
+    }
+
+    &--user-since {
+      width: 230px;
+      margin-right: 0rem;
+    }
+
+    &--subscription {
+      width: 150px;
+      margin-right: 0rem;
+
+      &--active {
+        color: $color-green;
+      }
+
+      &--non-active {
+        color: $color-red;
+      }
+    }
+
+    &--edit {
+      width: 50px;
+      text-align: center;
+
+      &--icon {
+        width: 2.5rem;      
+
+        &:hover path {
+          fill: $color-green;
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    &--delete {
+      width: 50px;
+      text-align: center;
+ &:hover path {
+          fill: $color-red;
+          transform: scale(1.2);
+        }
+      &--icon {
+        width: 2.5rem;
+
+       
+      }
     }
   }
 }

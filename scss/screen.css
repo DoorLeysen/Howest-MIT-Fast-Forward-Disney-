@@ -11199,30 +11199,75 @@ body {
 .table__title {
   border: none;
   border-bottom: 2px solid #ffffff;
+  margin-bottom: 5rem;
 }
 
 .table__row--number {
-  width: 163px;
+  width: 150px;
+  margin-right: 0rem;
 }
 
 .table__row--name {
-  width: 227px;
+  width: 270px;
+  margin-right: 0rem;
 }
 
 .table__row--mail {
-  width: 395px;
+  width: 360px;
+  margin-right: 0rem;
 }
 
 .table__row--user-since {
-  width: 278px;
+  width: 230px;
+  margin-right: 0rem;
 }
 
 .table__row--subscription {
-  width: 184px;
+  width: 150px;
+  margin-right: 0rem;
+}
+
+.table__row--subscription--active {
+  color: #07CB21;
+}
+
+.table__row--subscription--non-active {
+  color: #D62D2D;
 }
 
 .table__row--edit {
-  width: 119px;
+  width: 50px;
+  text-align: center;
+}
+
+.table__row--edit--icon {
+  width: 2.5rem;
+}
+
+.table__row--edit--icon:hover path {
+  fill: #07CB21;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.table__row--delete {
+  width: 50px;
+  text-align: center;
+}
+
+.table__row--delete:hover path {
+  fill: #D62D2D;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.table__row--delete--icon {
+  width: 2.5rem;
+}
+
+.c-edit__title {
+  color: #ffffff;
+  font-size: 9rem;
 }
 
 /*------------------------------------*\
