@@ -33,11 +33,19 @@
   #COMPONENTS
 \*------------------------------------*/
 
+
+@import 'components.table';
+
+
+@import "components.form";
+@import "components.edit";
+
 @import 'components.table';
 
 
 @import "component.form";
 @import "component.edit";
+
 
 /*------------------------------------*\
   #UTILITIES
