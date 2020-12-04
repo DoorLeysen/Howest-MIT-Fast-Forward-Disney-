@@ -6,6 +6,8 @@
   font-size: 18px;
   color: $color-white;
 
+ 
+
   &__title {
     border: none;
     border-bottom: 2px solid $color-white;
@@ -14,29 +16,54 @@
 
   &__row {
 
+
     &--number {
       width: 150px;
       margin-right: 0rem;
+
+      @include media-breakpoint-down(lg) {
+        min-width: 123px;
+      }
     }
 
     &--name {
       width: 270px;
       margin-right: 0rem;
+
+      @include media-breakpoint-down(lg) {
+        min-width: 207px;
+      }
+
     }
 
     &--mail {
       width: 360px;
       margin-right: 0rem;
+
+      @include media-breakpoint-down(lg) {
+        min-width: 323px;
+      }
+
     }
 
     &--user-since {
       width: 230px;
       margin-right: 0rem;
+
+      @include media-breakpoint-down(lg) {
+        min-width: 175px;
+      }
+
     }
 
     &--subscription {
       width: 150px;
       margin-right: 0rem;
+
+      @include media-breakpoint-down(lg) {
+        min-width: 139px;
+      }
+
 
       &--active {
         color: $color-green;
@@ -51,8 +78,13 @@
       width: 50px;
       text-align: center;
 
+      @include media-breakpoint-down(lg) {
+        min-width: 49px;
+      }
+
+
       &--icon {
-        width: 2.5rem;      
+        width: 2.5rem;
 
         &:hover path {
           fill: $color-green;
@@ -64,15 +96,21 @@
     &--delete {
       width: 50px;
       text-align: center;
- &:hover path {
-          fill: $color-red;
-          transform: scale(1.2);
-        }
+
+      @include media-breakpoint-down(lg) {
+        min-width: 49px;
+      }
+
+
+      &:hover path {
+        fill: $color-red;
+        transform: scale(1.2);
+      }
+
       &--icon {
         width: 2.5rem;
-
-       
       }
+
     }
   }
 }
