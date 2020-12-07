@@ -12089,6 +12089,9 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#060124), to(#253b98));
   background: linear-gradient(#060124, #253b98);
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /*------------------------------------*\
@@ -12097,6 +12100,270 @@ body {
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
+.c-logo {
+  width: 20rem;
+  margin: 4rem 0 2.8rem 3.8rem;
+}
+
+@media (max-width: 767.98px) {
+  .c-logo {
+    width: 15rem;
+  }
+}
+
+.c-nav {
+  background-color: #1a1d29;
+  position: relative;
+}
+
+.c-nav__bars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 3.2rem;
+  width: 6.3rem;
+  position: absolute;
+  top: 6rem;
+  right: 3rem;
+}
+
+@media (max-width: 767.98px) {
+  .c-nav__bars {
+    height: 2.5rem;
+    right: 4.5rem;
+  }
+}
+
+.c-nav__bar {
+  height: 0.4rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 767.98px) {
+  .c-nav__bar {
+    height: 0.2rem;
+  }
+}
+
+.c-nav__bar--small {
+  width: 4rem;
+}
+
+@media (max-width: 767.98px) {
+  .c-nav__bar--small {
+    width: 2.8rem;
+  }
+}
+
+.c-nav__bar--big {
+  width: 6.3rem;
+}
+
+@media (max-width: 767.98px) {
+  .c-nav__bar--big {
+    width: 3.5rem;
+  }
+}
+
+.c-nav__toggle {
+  opacity: 0;
+  height: 6.3rem;
+  width: 6.3rem;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  top: 4.5rem;
+  right: 3rem;
+}
+
+@media (max-width: 767.98px) {
+  .c-nav__toggle {
+    width: 3.5rem;
+    height: 3.5rem;
+    right: 4.5rem;
+  }
+}
+
+.c-nav__toggle:checked ~ .c-nav,
+.c-nav__toggle:checked ~ .c-nav__menu {
+  width: 12.3rem;
+}
+
+.c-nav__toggle:checked ~ .c-nav__menu {
+  margin-top: 22.65rem;
+}
+
+@media (max-width: 767.98px) {
+  .c-nav__toggle:checked ~ .c-nav__menu {
+    margin-top: 20rem;
+  }
+}
+
+.c-nav__toggle:checked ~ .c-nav__menu .c-nav__item .c-nav__info,
+.c-nav__toggle:checked ~ .c-nav__footer,
+.c-nav__toggle:checked ~ .c-logo {
+  display: none;
+}
+
+.c-nav__toggle:checked ~ .c-nav__bars .c-nav__bar--small {
+  width: 6.3rem;
+}
+
+@media (max-width: 767.98px) {
+  .c-nav__toggle:checked ~ .c-nav__bars .c-nav__bar--small {
+    width: 3.5rem;
+  }
+}
+
+.c-nav__menu {
+  width: 40rem;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 767.98px) {
+  .c-nav__menu {
+    width: 100vw;
+  }
+}
+
+.c-nav__item {
+  margin: 5rem 3.8rem;
+  display: block;
+  color: #ffffff;
+  font-size: 2.6rem;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 767.98px) {
+  .c-nav__item {
+    font-size: 2rem;
+  }
+}
+
+.c-nav__item:hover, .c-nav__item--active {
+  color: #5975db;
+}
+
+.c-nav__item:hover .c-nav__icon,
+.c-nav__item--active .c-nav__icon {
+  fill: #5975db;
+}
+
+.c-nav__icon {
+  margin-right: 4rem;
+  fill: #ffffff;
+  width: 4.8rem;
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+}
+
+@media (max-width: 767.98px) {
+  .c-nav__icon {
+    margin-right: 2.8rem;
+    width: 3.5rem;
+  }
+}
+
+.c-nav__footer {
+  width: 100%;
+  padding: 2.3rem 3.8rem 4rem 3.8rem;
+  border-top: solid 0.1rem #31343e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.c-nav__footer-copyright, .c-nav__footer-phone-helpdesk, .c-nav__footer-phone-helpdesk-link {
+  color: #ffffff;
+}
+
+.c-nav__footer-copyright {
+  font-size: 2rem;
+}
+
+@media (max-width: 767.98px) {
+  .c-nav__footer-copyright {
+    font-size: 1.5rem;
+  }
+}
+
+.c-nav__footer-phone-helpdesk {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 767.98px) {
+  .c-nav__footer-phone-helpdesk {
+    font-size: 1.2rem;
+  }
+}
+
+.c-nav__footer-phone-helpdesk-link {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.c-nav__footer-phone-helpdesk-link:hover {
+  color: #5975db;
+}
+
+.table {
+  width: 90%;
+  margin-left: 54px;
+  margin-top: 100px;
+  border: none;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.table__title {
+  border: none;
+  border-bottom: 2px solid #ffffff;
+}
+
+.table__row--number {
+  width: 163px;
+}
+
+.table__row--name {
+  width: 227px;
+}
+
+.table__row--mail {
+  width: 395px;
+}
+
+.table__row--user-since {
+  width: 278px;
+}
+
+.table__row--subscription {
+  width: 184px;
+}
+
+.table__row--edit {
+  width: 119px;
+}
+
+.c-edit__title {
+  color: #ffffff;
+  font-size: 9rem;
+}
+
 .table {
   width: 90%;
   margin-left: 54px;

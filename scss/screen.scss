@@ -7,7 +7,7 @@
 \*------------------------------------*/
 @import "settings";
 
-@import 'components.body';
+@import "components.body";
 
 /*------------------------------------*\
   #TOOLS
@@ -18,7 +18,6 @@
 \*------------------------------------*/
 @import "generic.normalize";
 @import "../bootstrap/scss/bootstrap";
-
 
 /*------------------------------------*\
   #ELEMENTS
@@ -32,19 +31,14 @@
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
-
-
-@import 'components.table';
-
+@import "components.logo";
+@import "components.nav";
 
 @import "components.form";
 @import "components.edit";
 
 @import 'components.table';
 @import "components.graph";
-
-@import "component.form";
-@import "component.edit";
 
 
 /*------------------------------------*\

@@ -95,10 +95,12 @@
         "../bootstrap/scss/utilities/_visibility.scss",
         "../bootstrap/scss/_print.scss",
         "_elements.scss",
+        "_components.logo.scss",
+        "_components.nav.scss",
         "_components.table.scss",
-        "_components.graph.scss",
-        "_component.form.scss",
-        "_component.edit.scss"
+        "_components.form.scss",
+        "_components.edit.scss",
+        "_components.table.scss"
     ],
     "names": [],
     "file": "screen.css"
