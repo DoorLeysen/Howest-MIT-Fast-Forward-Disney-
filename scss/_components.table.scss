@@ -6,30 +6,110 @@
   font-size: 18px;
   color: $color-white;
 
+ 
+
   &__title {
     border: none;
     border-bottom: 2px solid $color-white;
+    margin-bottom: 5rem;
   }
 
   &__row {
 
+
     &--number {
-        width: 163px;
+      width: 150px;
+      margin-right: 0rem;
+
+      @include media-breakpoint-down(lg) {
+        min-width: 123px;
+      }
     }
+
     &--name {
-        width: 227px;
+      width: 270px;
+      margin-right: 0rem;
+
+      @include media-breakpoint-down(lg) {
+        min-width: 207px;
+      }
+
     }
+
     &--mail {
-        width: 395px;
+      width: 360px;
+      margin-right: 0rem;
+
+      @include media-breakpoint-down(lg) {
+        min-width: 323px;
+      }
+
     }
+
     &--user-since {
-        width: 278px;
+      width: 230px;
+      margin-right: 0rem;
+
+      @include media-breakpoint-down(lg) {
+        min-width: 175px;
+      }
+
     }
+
     &--subscription {
-        width: 184px;
+      width: 150px;
+      margin-right: 0rem;
+
+      @include media-breakpoint-down(lg) {
+        min-width: 139px;
+      }
+
+
+      &--active {
+        color: $color-green;
+      }
+
+      &--non-active {
+        color: $color-red;
+      }
     }
+
     &--edit {
-        width: 119px;
+      width: 50px;
+      text-align: center;
+
+      @include media-breakpoint-down(lg) {
+        min-width: 49px;
+      }
+
+
+      &--icon {
+        width: 2.5rem;
+
+        &:hover path {
+          fill: $color-green;
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    &--delete {
+      width: 50px;
+      text-align: center;
+
+      @include media-breakpoint-down(lg) {
+        min-width: 49px;
+      }
+
+
+      &:hover path {
+        fill: $color-red;
+        transform: scale(1.2);
+      }
+
+      &--icon {
+        width: 2.5rem;
+      }
 
     }
   }

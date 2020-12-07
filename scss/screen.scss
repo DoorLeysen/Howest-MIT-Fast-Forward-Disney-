@@ -34,12 +34,12 @@
 @import "components.logo";
 @import "components.nav";
 
-@import "components.table";
-
 @import "components.form";
 @import "components.edit";
 
-@import "components.table";
+@import 'components.table';
+@import "components.graph";
+
 
 /*------------------------------------*\
   #UTILITIES
