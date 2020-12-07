@@ -1,0 +1,66 @@
+{"users":[
+    {
+        "id": "1",
+        "firstName": "Lien",
+        "lastName": "Stevens",
+        "title": "Mevr.",
+        "username": "Lienste",
+        "email": "lien.stevens@howest.be",
+        "dateOfBirth": "1984-06-24T15:45:26.625Z",
+        "address":
+        {
+            "street": "Graaf Karel De Goedelaan",
+            "houseNumber": "5",
+            "city": "Kortrijk",
+            "zipCode": "8500",
+            "country": "Belgium"
+        },
+        "phoneNumber":
+        [
+            {
+              "type": "fixed",
+              "number": "056 254 06 87"
+            },
+            {
+              "type": "mobile",
+              "number": "0478 45 26 12"
+            }
+        ],
+        "created": "2018-05-12T10:40:26.455Z",
+        "status": "active",
+        "lastLogin": "2020-11-24T16:48:36.455Z",
+        "paymentMethod": "Credit Card"
+    },
+    {
+        "id": "2",
+        "firstName": "Angelo",
+        "lastName": "Fallein",
+        "title": "Dhr.",
+        "username": "Angelo",
+        "email": "angelo.fallein@howest.be",
+        "dateOfBirth": "1987-05-12T10:41:06.605Z",
+        "address":
+        {
+            "street": "Sint-Martens-Latemlaan",
+            "houseNumber": "2B",
+            "city": "Kortrijk",
+            "zipCode": "8500",
+            "country": "Belgium"
+        },
+        "phoneNumber":
+        [
+            {
+              "type": "fixed",
+              "number": "056 154 26 87"
+            },
+            {
+              "type": "mobile",
+              "number": "0474 22 26 12"
+            }
+        ],
+        "created": "2017-07-12T10:40:26.455Z",
+        "status": "non active",
+        "lastLogin": "2020-09-24T16:48:36.455Z",
+        "paymentMethod": "Paypal"
+    }
+]}

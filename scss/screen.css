@@ -12192,8 +12192,6 @@ body {
 
 .table__row--edit--icon:hover path {
   fill: #07CB21;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .table__row--delete {
@@ -12209,19 +12207,131 @@ body {
 
 .table__row--delete:hover path {
   fill: #D62D2D;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .table__row--delete--icon {
   width: 2.5rem;
 }
 
-canvas {
+.c-edit__title {
+  color: #ffffff;
+  font-size: 9rem;
+}
+
+.table {
+  width: 90%;
+  margin-left: 54px;
   margin-top: 100px;
-  margin-left: 100px;
-  border: 1px solid white;
-  width: 50%;
+  border: none;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.table__title {
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: 5rem;
+}
+
+.table__row--number {
+  width: 150px;
+  margin-right: 0rem;
+}
+
+@media (max-width: 1199.98px) {
+  .table__row--number {
+    min-width: 123px;
+  }
+}
+
+.table__row--name {
+  width: 270px;
+  margin-right: 0rem;
+}
+
+@media (max-width: 1199.98px) {
+  .table__row--name {
+    min-width: 207px;
+  }
+}
+
+.table__row--mail {
+  width: 360px;
+  margin-right: 0rem;
+}
+
+@media (max-width: 1199.98px) {
+  .table__row--mail {
+    min-width: 323px;
+  }
+}
+
+.table__row--user-since {
+  width: 230px;
+  margin-right: 0rem;
+}
+
+@media (max-width: 1199.98px) {
+  .table__row--user-since {
+    min-width: 175px;
+  }
+}
+
+.table__row--subscription {
+  width: 150px;
+  margin-right: 0rem;
+}
+
+@media (max-width: 1199.98px) {
+  .table__row--subscription {
+    min-width: 139px;
+  }
+}
+
+.table__row--subscription--active {
+  color: #07CB21;
+}
+
+.table__row--subscription--non-active {
+  color: #D62D2D;
+}
+
+.table__row--edit {
+  width: 50px;
+  text-align: center;
+}
+
+@media (max-width: 1199.98px) {
+  .table__row--edit {
+    min-width: 49px;
+  }
+}
+
+.table__row--edit--icon {
+  width: 2.5rem;
+}
+
+.table__row--edit--icon:hover path {
+  fill: #07CB21;
+}
+
+.table__row--delete {
+  width: 50px;
+  text-align: center;
+}
+
+@media (max-width: 1199.98px) {
+  .table__row--delete {
+    min-width: 49px;
+  }
+}
+
+.table__row--delete:hover path {
+  fill: #D62D2D;
+}
+
+.table__row--delete--icon {
+  width: 2.5rem;
 }
 
 .c-edit__title {

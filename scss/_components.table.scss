@@ -88,7 +88,7 @@
 
         &:hover path {
           fill: $color-green;
-          transform: scale(1.2);
+          //transform: scale(1.2);
         }
       }
     }
@@ -104,7 +104,7 @@
 
       &:hover path {
         fill: $color-red;
-        transform: scale(1.2);
+        //transform: scale(1.2);
       }
 
       &--icon {
