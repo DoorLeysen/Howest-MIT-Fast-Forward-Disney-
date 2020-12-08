@@ -127,7 +127,6 @@
 
 /*------------------------------------------- table ----------------------------------------*/
 .table {
-  width: 90%;
   margin-left: 54px;
   border: none;
   font-size: 18px;
@@ -135,6 +134,10 @@
   margin-top: 0px;
   margin-bottom: 34px;
   vertical-align: top;
+
+  @include media-breakpoint-down(xl) {
+    margin-right: 50px;
+  }
 
   &__title {
     border: none;
@@ -144,46 +147,46 @@
 
   &__row {
     &--number {
-      width: 150px;
+      width: 122px;
       margin-right: 0rem;
 
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(xl) {
         min-width: 123px;
       }
     }
 
     &--name {
-      width: 270px;
+      width: 259px;
       margin-right: 0rem;
 
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(xl) {
         min-width: 207px;
       }
     }
 
     &--mail {
-      width: 360px;
+      width: 376px;
       margin-right: 0rem;
 
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(xl) {
         min-width: 323px;
       }
     }
 
     &--user-since {
-      width: 230px;
+      width: 268px;
       margin-right: 0rem;
 
-      @include media-breakpoint-down(lg) {
-        min-width: 175px;
+      @include media-breakpoint-down(xl) {
+        min-width: 120px;
       }
     }
 
     &--subscription {
-      width: 150px;
+      width: 167px;
       margin-right: 0rem;
 
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(xl) {
         min-width: 139px;
       }
 
@@ -197,10 +200,10 @@
     }
 
     &--edit {
-      width: 50px;
+      width: 47px;
       text-align: center;
 
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(xl) {
         min-width: 49px;
       }
 
@@ -214,11 +217,11 @@
     }
 
     &--delete {
-      width: 50px;
+      width: 47px;
       text-align: center;
 
-      @include media-breakpoint-down(lg) {
-        min-width: 49px;
+      @include media-breakpoint-down(xl) {
+        min-width: 49px;     
       }
 
       &:hover path {
@@ -235,8 +238,23 @@
 /*-----------------------------------------------pagination ---------------------------------------*/
 
 .c-pagination {
-  margin-left: 53.4375vw;
+  margin-left: 30vw;
   margin-right: auto;
+
+  @include media-breakpoint-down(xl) {
+    margin-left: 33vw;
+    margin-right: auto;
+    }
+
+    @include media-breakpoint-down(lg) {
+      margin-left: 43vw;
+      margin-right: auto;
+      }
+
+      @include media-breakpoint-down(md) {
+        margin-left: 70vw;
+        margin-right: auto;
+        }
 
   &__buttons {
     display: flex;
@@ -269,7 +287,7 @@
   }
 
   &__arrow--left {
-    margin-right: 23px;
+    margin-right: 10px;
     width: 40px;
     height: 40px;
     padding-top: 3px;
@@ -280,7 +298,7 @@
   }
 
   &__arrow--right {
-    margin-left: 13px;
+    //margin-left: 13px;
     width: 40px;
     height: 40px;
     padding-top: 3px;
