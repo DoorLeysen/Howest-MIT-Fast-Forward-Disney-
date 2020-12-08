@@ -11225,6 +11225,54 @@ body {
   width: 119px;
 }
 
+.c-edit__title {
+  color: #ffffff;
+  font-size: 9rem;
+}
+
+.test {
+  font-size: 20rem;
+  color: red;
+}
+
+.table {
+  width: 90%;
+  margin-left: 54px;
+  margin-top: 100px;
+  border: none;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.table__title {
+  border: none;
+  border-bottom: 2px solid #ffffff;
+}
+
+.table__row--number {
+  width: 163px;
+}
+
+.table__row--name {
+  width: 227px;
+}
+
+.table__row--mail {
+  width: 395px;
+}
+
+.table__row--user-since {
+  width: 278px;
+}
+
+.table__row--subscription {
+  width: 184px;
+}
+
+.table__row--edit {
+  width: 119px;
+}
+
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
