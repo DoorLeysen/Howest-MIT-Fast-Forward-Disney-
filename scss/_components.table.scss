@@ -7,18 +7,86 @@
   cursor: pointer;
 }
 
+/*---------------------------------------------filter buttons -----------------------------------*/
+.c-filter {
+  display: flex;
+  flex-direction: row;
+  margin-left: 54px;
+  font-weight: $font-weight-bold;  
+  margin-bottom: 68px;
+
+
+  &__title {
+    color: $color-white;
+    padding-top: 6px;
+    font-family: $font-family;
+    font-size: 20px;
+    margin-right: 38px
+  }    
+  
+  &__button--asc {
+      background-color: #2642B1;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      padding: 0;
+      font-size: 20px;
+      margin: 4px 0px;
+      border-radius: 10px 0px 0px 10px;
+      width: 85px;
+      height: 40px;
+      cursor: pointer;
+    }
+
+    &__button--desc {
+      background-color: #2C9CFF;
+      border: none;
+      color: white;
+      padding: 0;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 0px;
+      border-radius: 0px 10px 10px 0px;
+      width: 85px;
+      height: 40px;
+
+      cursor: pointer;
+    }
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
+}
+.dropdown--button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  border: none;
+  width: 237px;
+  font-family: $font-family;
+  font-size: 20px;
+  padding: 0px;
+  margin: 4px 0px;
+  margin-right: 28px;  
+  height: 40px;
+
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  margin-top: -4px;
 }
 
 .dropdown-content a {
@@ -27,7 +95,6 @@
   text-decoration: none;
   display: block;
 }
-
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 .dropdown:hover .dropdown-content {
@@ -58,21 +125,38 @@
   width: 90%;
   margin-left: 54px;
   margin-top: 100px;
+  width: 237px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover 
+.dropdown-content {display: block;
+}
+
+.dropdown:hover 
+.dropdown--button {
+  background-color: #3e8e41;
+}
+
+
+/*------------------------------------------- table ----------------------------------------*/
+.table {
+  width: 90%;
+  margin-left: 54px;
   border: none;
   font-size: 18px;
   color: $color-white;
 
  
-
   &__title {
     border: none;
     border-bottom: 2px solid $color-white;
-    margin-bottom: 5rem;
   }
 
   &__row {
-
-
     &--number {
       width: 150px;
       margin-right: 0rem;
@@ -89,7 +173,6 @@
       @include media-breakpoint-down(lg) {
         min-width: 207px;
       }
-
     }
 
     &--mail {
@@ -99,7 +182,6 @@
       @include media-breakpoint-down(lg) {
         min-width: 323px;
       }
-
     }
 
     &--user-since {
@@ -145,6 +227,7 @@
         &:hover path {
           fill: $color-green;
           //transform: scale(1.2);
+          transform: scale(1.2);
         }
       }
     }
@@ -159,14 +242,12 @@
 
 
       &:hover path {
-        fill: $color-red;
-        //transform: scale(1.2);
+        fill: $color-red;      
       }
 
       &--icon {
         width: 2.5rem;
       }
-
     }
   }
 }
