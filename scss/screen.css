@@ -2451,7 +2451,7 @@ pre code {
 .table th,
 .table td {
   padding: 0.75rem;
-  vertical-align: top;
+  vertical-align: middle;
   border-top: none;
 }
 
@@ -12098,11 +12098,19 @@ body {
   #COMPONENTS
 \*------------------------------------*/
 .dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
+  background-color: #ffffff;
+  color: black;
   font-size: 16px;
   border: none;
+  height: 40px;
+  width: 237px;
+  font-weight: 700;
+  font-family: "Gadugi";
+  padding: auto;
+  padding-left: 15px;
+  margin-right: 32px;
+  text-align: left;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -12118,89 +12126,97 @@ body {
   margin-left: 54px;
   font-weight: 700;
   margin-bottom: 68px;
+  height: 40px;
 }
 
 .c-filter__title {
   color: #ffffff;
-  padding-top: 6px;
+  padding-top: 3px;
   font-family: "Gadugi";
   font-size: 20px;
+  font-weight: 700;
   margin-right: 38px;
+  letter-spacing: 1.3px;
 }
 
 .c-filter__button--asc {
-  background-color: #2642B1;
+  background-color: #ffffff;
   border: none;
-  color: white;
+  color: #000;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   padding: 0;
-  font-size: 20px;
-  margin: 4px 0px;
+  margin: 0px;
   border-radius: 10px 0px 0px 10px;
+  font-weight: 700;
   width: 85px;
   height: 40px;
   cursor: pointer;
+  text-transform: uppercase;
+  border-right: 1px solid black;
+}
+
+.c-filter__button--asc:active, .c-filter__button--asc:focus,
+.c-filter__button--asc .c-filter__button--desc {
+  background-color: #2642b1;
+  color: #ffffff;
+  outline: none;
 }
 
 .c-filter__button--desc {
-  background-color: #2C9CFF;
+  background-color: #ffffff;
   border: none;
-  color: white;
+  color: #000000;
   padding: 0;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
-  margin: 4px 0px;
+  margin: 0px;
   border-radius: 0px 10px 10px 0px;
+  font-weight: 700;
   width: 85px;
   height: 40px;
   cursor: pointer;
+  text-transform: uppercase;
+}
+
+.c-filter__button--desc:active, .c-filter__button--desc:focus,
+.c-filter__button--desc .c-filter__button--asc {
+  background-color: #2c9cff;
+  color: #ffffff;
+  outline: none;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
-}
-
-.dropdown--button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 15px 32px;
-  font-size: 16px;
-  border: none;
-  width: 237px;
-  font-family: "Gadugi";
-  font-size: 20px;
-  padding: 0px;
-  margin: 4px 0px;
-  margin-right: 28px;
   height: 40px;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   min-width: 160px;
+  font-family: "Gadugi";
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  margin-top: -4px;
+  width: 237px;
 }
 
 .dropdown-content a {
-  color: black;
+  color: #000000;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #2c9cff;
+  color: #ffffff;
 }
 
 .dropdown:hover .dropdown-content {
@@ -12208,48 +12224,9 @@ body {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
-.button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.button1 {
-  background-color: #4CAF50;
-}
-
-/* Green */
-.button2 {
-  background-color: #008CBA;
-}
-
-/* Blue */
-.table {
-  width: 90%;
-  margin-left: 54px;
-  margin-top: 100px;
-  width: 237px;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropdown--button {
-  background-color: #3e8e41;
+  color: #ffffff;
+  background-color: #2c9cff;
+  border-radius: 10px 10px 0px 0px;
 }
 
 /*------------------------------------------- table ----------------------------------------*/
@@ -12259,11 +12236,15 @@ body {
   border: none;
   font-size: 18px;
   color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 34px;
+  vertical-align: top;
 }
 
 .table__title {
   border: none;
   border-bottom: 2px solid #ffffff;
+  padding-top: 0px !important;
 }
 
 .table__row--number {
@@ -12346,8 +12327,6 @@ body {
 
 .table__row--edit--icon:hover path {
   fill: #07CB21;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .table__row--delete {
@@ -12367,6 +12346,56 @@ body {
 
 .table__row--delete--icon {
   width: 2.5rem;
+}
+
+/*-----------------------------------------------pagination ---------------------------------------*/
+.c-pagination {
+  margin-left: 53.4375vw;
+  margin-right: auto;
+}
+
+.c-pagination__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c-pagination__button {
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #2c9cff;
+  border-radius: 5px;
+  vertical-align: middle;
+  padding-top: 5px;
+  margin-right: 10px;
+}
+
+.c-pagination__button--text {
+  height: 100%;
+  padding: auto;
+}
+
+.c-pagination__arrow--left {
+  margin-right: 23px;
+  width: 40px;
+  height: 40px;
+  padding-top: 3px;
+}
+
+.c-pagination__arrow--right {
+  margin-left: 18px;
+  width: 40px;
+  height: 40px;
+  padding-top: 3px;
 }
 
 *:before,

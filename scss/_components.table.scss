@@ -1,9 +1,17 @@
 .dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
+  background-color: $color-white;
+  color: black;
   font-size: 16px;
   border: none;
+  height: 40px;
+  width: 237px;
+  font-weight: $font-weight-bold;
+  font-family: $font-family;
+  padding: auto;
+  padding-left: 15px;
+  margin-right: 32px;
+  text-align: left;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -12,135 +20,110 @@
   display: flex;
   flex-direction: row;
   margin-left: 54px;
-  font-weight: $font-weight-bold;  
+  font-weight: $font-weight-bold;
   margin-bottom: 68px;
-
+  height: 40px;
 
   &__title {
     color: $color-white;
-    padding-top: 6px;
+    padding-top: 3px;
     font-family: $font-family;
     font-size: 20px;
-    margin-right: 38px
-  }    
-  
+    font-weight: $font-weight-bold;
+    margin-right: 38px;
+    letter-spacing: 1.3px;
+  }
+
   &__button--asc {
-      background-color: #2642B1;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      padding: 0;
-      font-size: 20px;
-      margin: 4px 0px;
-      border-radius: 10px 0px 0px 10px;
-      width: 85px;
-      height: 40px;
-      cursor: pointer;
-    }
+    background-color: $color-white;
+    border: none;
+    color: $black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0px;
+    border-radius: 10px 0px 0px 10px;
+    font-weight: $font-weight-bold;
+    width: 85px;
+    height: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-right: 1px solid black;
 
-    &__button--desc {
-      background-color: #2C9CFF;
-      border: none;
-      color: white;
-      padding: 0;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 20px;
-      margin: 4px 0px;
-      border-radius: 0px 10px 10px 0px;
-      width: 85px;
-      height: 40px;
-
-      cursor: pointer;
+    &:active,
+    &:focus,
+    .c-filter__button--desc {
+      background-color: #2642b1;
+      color: $color-white;
+      outline: none;
     }
+  }
+
+  &__button--desc {
+    background-color: $color-white;
+    border: none;
+    color: $color-black;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+    border-radius: 0px 10px 10px 0px;
+    font-weight: $font-weight-bold;
+    width: 85px;
+    height: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:active,
+    &:focus,
+    .c-filter__button--asc {
+      background-color: #2c9cff;
+      color: $color-white;
+      outline: none;
+    }
+  }
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
-}
-.dropdown--button{
-  background-color: #4CAF50;
-  color: white;
-  padding: 15px 32px;
-  font-size: 16px;
-  border: none;
-  width: 237px;
-  font-family: $font-family;
-  font-size: 20px;
-  padding: 0px;
-  margin: 4px 0px;
-  margin-right: 28px;  
   height: 40px;
-
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: $color-white;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  font-family: $font-family;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  margin-top: -4px;
+  width: 237px;
 }
 
 .dropdown-content a {
-  color: black;
+  color: $color-black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #2c9cff;
+  color: $color-white;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  color: $color-white;
+  background-color: #2c9cff;
+  border-radius: 10px 10px 0px 0px;
 }
-
-
-.button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.button1 {background-color: #4CAF50;} /* Green */
-.button2 {background-color: #008CBA;} /* Blue */
-
-.table {
-  width: 90%;
-  margin-left: 54px;
-  margin-top: 100px;
-  width: 237px;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover 
-.dropdown-content {display: block;
-}
-
-.dropdown:hover 
-.dropdown--button {
-  background-color: #3e8e41;
-}
-
 
 /*------------------------------------------- table ----------------------------------------*/
 .table {
@@ -149,11 +132,14 @@
   border: none;
   font-size: 18px;
   color: $color-white;
+  margin-top: 0px;
+  margin-bottom: 34px;
+  vertical-align: top;
 
- 
   &__title {
     border: none;
     border-bottom: 2px solid $color-white;
+    padding-top: 0px !important;
   }
 
   &__row {
@@ -191,7 +177,6 @@
       @include media-breakpoint-down(lg) {
         min-width: 175px;
       }
-
     }
 
     &--subscription {
@@ -201,7 +186,6 @@
       @include media-breakpoint-down(lg) {
         min-width: 139px;
       }
-
 
       &--active {
         color: $color-green;
@@ -220,14 +204,11 @@
         min-width: 49px;
       }
 
-
       &--icon {
         width: 2.5rem;
 
         &:hover path {
           fill: $color-green;
-          //transform: scale(1.2);
-          transform: scale(1.2);
         }
       }
     }
@@ -240,14 +221,60 @@
         min-width: 49px;
       }
 
-
       &:hover path {
-        fill: $color-red;      
+        fill: $color-red;
       }
 
       &--icon {
         width: 2.5rem;
       }
     }
+  }
+}
+
+/*-----------------------------------------------pagination ---------------------------------------*/
+
+.c-pagination {
+  margin-left: 53.4375vw;
+  margin-right: auto;
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+
+  &__button {
+    color: $color-white;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #2c9cff;
+    border-radius: 5px;
+    vertical-align: middle;
+    padding-top: 5px;
+    margin-right: 10px;
+
+    &--text {
+      height: 100%;
+      padding: auto;
+    }
+  }
+
+  &__arrow--left {
+    margin-right: 23px;
+    width: 40px;
+    height: 40px;
+    padding-top: 3px;
+  }
+
+  &__arrow--right {
+    margin-left: 18px;
+    width: 40px;
+    height: 40px;
+    padding-top: 3px;
   }
 }
