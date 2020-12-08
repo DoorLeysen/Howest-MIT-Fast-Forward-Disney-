@@ -1,0 +1,8 @@
+.c-logo {
+  width: 20rem;
+  margin: 4rem 0 2.8rem 3.8rem;
+
+  @include media-breakpoint-down(sm) {
+    width: 15rem;
+  }
+}
