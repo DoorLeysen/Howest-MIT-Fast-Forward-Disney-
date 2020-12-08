@@ -1,0 +1,354 @@
+{"users":[
+    {
+        "id": "1",
+        "firstName": "Lien",
+        "lastName": "Stevens",
+        "title": "Mevr.",
+        "username": "Lienste",
+        "email": "lien.stevens@howest.be",
+        "dateOfBirth": "1984-06-24",
+        "address":
+        {
+            "street": "Graaf Karel De Goedelaan",
+            "houseNumber": "5",
+            "city": "Kortrijk",
+            "zipCode": "8500",
+            "country": "Belgium"
+        },
+        "phoneNumber":
+        [
+            {
+              "type": "fixed",
+              "number": "056 254 06 87"
+            },
+            {
+              "type": "mobile",
+              "number": "0478 45 26 12"
+            }
+        ],
+        "created": "2018-05-12",
+        "status": "active",
+        "lastLogin": "2020-11-24",
+        "paymentMethod": "Credit Card"
+    },
+    {
+        "id": "2",
+        "firstName": "Angelo",
+        "lastName": "Fallein",
+        "title": "Dhr.",
+        "username": "Angelo",
+        "email": "angelo.fallein@howest.be",
+        "dateOfBirth": "1987-05-12",
+        "address":
+        {
+            "street": "Sint-Martens-Latemlaan",
+            "houseNumber": "2B",
+            "city": "Kortrijk",
+            "zipCode": "8500",
+            "country": "Belgium"
+        },
+        "phoneNumber":
+        [
+            {
+              "type": "fixed",
+              "number": "056 154 26 87"
+            },
+            {
+              "type": "mobile",
+              "number": "0474 22 26 12"
+            }
+        ],
+        "created": "2017-07-12",
+        "status": "non active",
+        "lastLogin": "2020-09-24",
+        "paymentMethod": "Paypal"
+    },
+    {
+      "id": "3",
+      "firstName": "Doran",
+      "lastName": "Vancoillie",
+      "title": "Dhr.",
+      "username": "Doran",
+      "email": "doran.vancoillie@student.howest.be",
+      "dateOfBirth": "1999-02-07",
+      "address":
+      {
+          "street": "Zonnebeeksestraat",
+          "houseNumber": "203",
+          "city": "Zonnebeke",
+          "zipCode": "8980",
+          "country": "Belgium"
+      },
+      "phoneNumber":
+      [
+          {
+            "type": "fixed",
+            "number": "051 85 35 26"
+          },
+          {
+            "type": "mobile",
+            "number": "0478 48 58 68"
+          }
+      ],
+      "created": "2017-04-20",
+      "status": "active",
+      "lastLogin": "2020-11-21",
+      "paymentMethod": "Bancontact"
+  },
+  {
+    "id": "4",
+    "firstName": "Angel",
+    "lastName": "Peeters",
+    "title": "Mevr.",
+    "username": "Angie",
+    "email": "angie.peeters@hotmail.be",
+    "dateOfBirth": "1989-03-12",
+    "address":
+    {
+        "street": "Roeselarestraat",
+        "houseNumber": "25",
+        "city": "Zonnebeke",
+        "zipCode": "8980",
+        "country": "Belgium"
+    },
+    "phoneNumber":
+    [
+        {
+          "type": "fixed",
+          "number": "056 123 78 85"
+        },
+        {
+          "type": "mobile",
+          "number": "0479 24 17 85"
+        }
+    ],
+    "created": "2018-05-12",
+    "status": "active",
+    "lastLogin": "2020-11-24",
+    "paymentMethod": "Credit Card"
+},
+{
+  "id": "5",
+  "firstName": "Dieter",
+  "lastName": "Meeuws",
+  "title": "Dhr.",
+  "username": "Dieter",
+  "email": "dieter.meeuws@outlook.be",
+  "dateOfBirth": "1995-01-20",
+  "address":
+  {
+      "street": "Guidolaan",
+      "houseNumber": "258",
+      "city": "Ieper",
+      "zipCode": "8900",
+      "country": "Belgium"
+  },
+  "phoneNumber":
+  [
+      {
+        "type": "fixed",
+        "number": "056 159 35 69"
+      },
+      {
+        "type": "mobile",
+        "number": "0478 41 84 19"
+      }
+  ],
+  "created": "2018-05-12",
+  "status": "active",
+  "lastLogin": "2012-09-23",
+  "paymentMethod": "Paypal"
+},
+{
+  "id": "6",
+  "firstName": "Filip ",
+  "lastName": "Lam",
+  "title": "Dhr.",
+  "username": "Filip",
+  "email": "filip.lam@hotmail.com",
+  "dateOfBirth": "1991-01-27",
+  "address":
+  {
+      "street": "Bakerstreet",
+      "houseNumber": "55",
+      "city": "London",
+      "zipCode": "3200",
+      "country": "Engeland"
+  },
+  "phoneNumber":
+  [
+      {
+        "type": "fixed",
+        "number": "056 254 20 87"
+      },
+      {
+        "type": "mobile",
+        "number": "0477 85 35 46"
+      }
+  ],
+  "created": "2016-01-25",
+  "status": "active",
+  "lastLogin": "2020-07-01",
+  "paymentMethod": "Credit Card"
+},
+{
+  "id": "7",
+  "firstName": "Katey",
+  "lastName": "Donaldson",
+  "title": "Mevr.",
+  "username": "Katey",
+  "email": "katey.donaldson@hotmail.com",
+  "dateOfBirth": "1988-12-25",
+  "address":
+  {
+      "street": "Ieperstraat",
+      "houseNumber": "9",
+      "city": "Zonnebekestaat",
+      "zipCode": "8980",
+      "country": "Belgium"
+  },
+  "phoneNumber":
+  [
+      {
+        "type": "fixed",
+        "number": "058 254 06 17"
+      },
+      {
+        "type": "mobile",
+        "number": "0478 95 26 32"
+      }
+  ],
+  "created": "2018-02-15",
+  "status": "active",
+  "lastLogin": "2020-06-29",
+  "paymentMethod": "Bancontact"
+},
+{
+  "id": "8",
+  "firstName": "Patrick",
+  "lastName": "Ryan",
+  "title": "Dhr.",
+  "username": "Patrick",
+  "email": "patrick.ryan@outlook.be",
+  "dateOfBirth": "1987-05-12",
+  "address":
+  {
+      "street": "Meiboomlaan",
+      "houseNumber": "11",
+      "city": "Kortrijk",
+      "zipCode": "8500",
+      "country": "Belgium"
+  },
+  "phoneNumber":
+  [
+      {
+        "type": "fixed",
+        "number": "054 284 56 12"
+      },
+      {
+        "type": "mobile",
+        "number": "0478 45 26 12"
+      }
+  ],
+  "created": "2017-12-12",
+  "status": "active",
+  "lastLogin": "2029-05-25",
+  "paymentMethod": "Credit Card"
+},
+{
+  "id": "9",
+  "firstName": "Marnie",
+  "lastName": "Storey",
+  "title": "Mevr.",
+  "username": "Marnie",
+  "email": "Marnie.Storey@outlook.be",
+  "dateOfBirth": "1979-12-24",
+  "address":
+  {
+      "street": "Karellaan",
+      "houseNumber": "58",
+      "city": "Kortrijk",
+      "zipCode": "8500",
+      "country": "Belgium"
+  },
+  "phoneNumber":
+  [
+      {
+        "type": "fixed",
+        "number": "057 269 65 87"
+      },
+      {
+        "type": "mobile",
+        "number": "0477 52 30 20"
+      }
+  ],
+  "created": "2018-09-20",
+  "status": "active",
+  "lastLogin": "2020-19-35",
+  "paymentMethod": "Credit Card"
+},
+{
+  "id": "10",
+  "firstName": "Regina",
+  "lastName": "Handley",
+  "title": "Mevr.",
+  "username": "Regina",
+  "email": "regina.handley@outlook.be",
+  "dateOfBirth": "1988-0-24",
+  "address":
+  {
+      "street": "Goedelaan",
+      "houseNumber": "52",
+      "city": "Kortrijk",
+      "zipCode": "8500",
+      "country": "Belgium"
+  },
+  "phoneNumber":
+  [
+      {
+        "type": "fixed",
+        "number": "056 254 06 87"
+      },
+      {
+        "type": "mobile",
+        "number": "0478 45 26 12"
+      }
+  ],
+  "created": "2018-02-25",
+  "status": "active",
+  "lastLogin": "2020-12-29",
+  "paymentMethod": "Credit Card"
+},
+{
+  "id": "11",
+  "firstName": "Ebonie",
+  "lastName": "Robson",
+  "title": "Mevr.",
+  "username": "Ebonie",
+  "email": "ebonie.robson@hotmail.be",
+  "dateOfBirth": "1984-06-24",
+  "address":
+  {
+      "street": "Graaf Karel De Goedelaan",
+      "houseNumber": "12",
+      "city": "Kortrijk",
+      "zipCode": "8500",
+      "country": "Belgium"
+  },
+  "phoneNumber":
+  [
+      {
+        "type": "fixed",
+        "number": "059 258 25 36"
+      },
+      {
+        "type": "mobile",
+        "number": "0478 78 85 56"
+      }
+  ],
+  "created": "2018-08-15",
+  "status": "active",
+  "lastLogin": "2020-07-24",
+  "paymentMethod": "Paypal"
+}
+]}
