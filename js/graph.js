@@ -8,14 +8,14 @@ gradient.addColorStop(1, 'rgba(255, 0, 0, 0)');
 
 
 var data  = {
-    labels: [ 'January', 'February', 'March', 'April', 'May', 'June' ],
+	labels: ['nov 2019','dec 2019','jan 2020','feb 2020','maart 2020','april 2020','mei 2020','juni 2020','juli 2020','aug 2020','sept 2020','okt 2020','nov 2020','dec 2020'],
     datasets: [{
 			label: 'Custom Label Name',
 			backgroundColor: gradient,
 			pointBackgroundColor: 'white',
 			borderWidth: 1,
 			borderColor: '#911215',
-			data: [50, 55, 80, 81, 54, 50]
+			data: [10000000, 26500000, 27200000,28600000, 37965000, 50000000, 54500000, 57500000,60500000,73700000, 75800000, 77300000,78550000,80000000] 
     }]
 };
 
@@ -30,7 +30,7 @@ var options = {
 	scales: {
 		xAxes: [{
 			gridLines: {
-				color: 'rgba(200, 200, 200, 0.05)',
+				color: 'rgba(0, 0, 0, 0)',
 				lineWidth: 1
 			}
 		}],
@@ -53,9 +53,9 @@ var options = {
 		backgroundColor: 'white'
 	},
 	tooltips: {
-		titleFontFamily: 'Open Sans',
-		backgroundColor: 'rgba(0,0,0,0.3)',
-		titleFontColor: 'red',
+		titleFontFamily: 'gadugi',
+		backgroundColor: 'rgba(0,0,0,0.1)',
+		titleFontColor: 'white',
 		caretSize: 5,
 		cornerRadius: 2,
 		xPadding: 10,

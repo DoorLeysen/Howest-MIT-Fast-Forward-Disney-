@@ -12730,6 +12730,17 @@ body {
   padding-top: 3px;
 }
 
+.c-title__usermanagement {
+  color: #ffffff;
+  margin-top: 62px;
+  margin-left: 54px;
+  margin-bottom: 45px;
+}
+
+.chart {
+  width: 900px;
+}
+
 *:before,
 *:after {
   -webkit-box-sizing: inherit;
@@ -12742,6 +12753,8 @@ body {
   opacity: 0;
   max-width: 640px;
   width: 100%;
+  margin-bottom: 57px;
+  margin-left: 54px;
 }
 
 .aspect-ratio {
