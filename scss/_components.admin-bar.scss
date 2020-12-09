@@ -11,16 +11,16 @@
   }
 
   &__icon {
-    width: 5.5rem;
+    width: 4rem;
     fill: $color-white;
 
     @include media-breakpoint-down(sm) {
-      width: 3.5rem;
+      width: 3.2rem;
     }
   }
 
   &__tekst {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0;
     margin-left: 2rem;
     color: $color-white;
@@ -28,7 +28,7 @@
     align-self: center;
 
     @include media-breakpoint-down(sm) {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
     }
   }
 }
