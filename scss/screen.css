@@ -12131,11 +12131,11 @@ main {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 3.2rem;
-  width: 6.3rem;
+  height: 3rem;
+  width: 3.6rem;
   position: absolute;
   top: 6rem;
-  right: 3rem;
+  right: 3.8rem;
 }
 
 @media (max-width: 767.98px) {
@@ -12160,40 +12160,40 @@ main {
 }
 
 .c-nav__bar--small {
-  width: 4rem;
+  width: 2.5rem;
 }
 
 @media (max-width: 767.98px) {
   .c-nav__bar--small {
-    width: 2.8rem;
+    width: 2rem;
   }
 }
 
 .c-nav__bar--big {
-  width: 6.3rem;
+  width: 3.6rem;
 }
 
 @media (max-width: 767.98px) {
   .c-nav__bar--big {
-    width: 3.5rem;
+    width: 3rem;
   }
 }
 
 .c-nav__toggle {
   opacity: 0;
-  height: 6.3rem;
-  width: 6.3rem;
+  height: 3.6rem;
+  width: 3.6rem;
   cursor: pointer;
   z-index: 1;
   position: absolute;
-  top: 4.5rem;
-  right: 3rem;
+  top: 6rem;
+  right: 3.8rem;
 }
 
 @media (max-width: 767.98px) {
   .c-nav__toggle {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     right: 4.5rem;
   }
 }
@@ -12220,12 +12220,12 @@ main {
 }
 
 .c-nav__toggle:checked ~ .c-nav__bars .c-nav__bar--small {
-  width: 6.3rem;
+  width: 3.6rem;
 }
 
 @media (max-width: 767.98px) {
   .c-nav__toggle:checked ~ .c-nav__bars .c-nav__bar--small {
-    width: 3.5rem;
+    width: 3rem;
   }
 }
 
@@ -12245,7 +12245,7 @@ main {
   margin: 5rem 3.8rem;
   display: block;
   color: #ffffff;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
@@ -12268,7 +12268,7 @@ main {
 .c-nav__icon {
   margin-right: 4rem;
   fill: #ffffff;
-  width: 4.8rem;
+  width: 3.6rem;
   -webkit-transition: fill 0.3s ease;
   transition: fill 0.3s ease;
 }
@@ -12276,7 +12276,7 @@ main {
 @media (max-width: 767.98px) {
   .c-nav__icon {
     margin-right: 2.8rem;
-    width: 3.5rem;
+    width: 3rem;
   }
 }
 
