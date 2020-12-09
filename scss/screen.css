@@ -12371,6 +12371,31 @@ main {
   }
 }
 
+.c-right {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.c-right__label {
+  padding-bottom: 3.6rem;
+}
+
+.c-right__label__title {
+  padding-top: 10rem;
+}
+
+.c-right__input {
+  border-radius: .8rem;
+}
+
+.c-right__description {
+  height: 15rem;
+}
+
+.form-label {
+  font-size: 2rem;
+}
+
 .c-left {
   margin-left: 2%;
 }
