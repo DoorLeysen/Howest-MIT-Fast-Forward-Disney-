@@ -2,12 +2,11 @@
   #FONTS
 \*------------------------------------*/
 @import url("https://db.onlinewebfonts.com/c/3f3f1a887702b525cda01f7cd776b241?family=Gadugi");
+
 /*------------------------------------*\
   #SETTINGS
 \*------------------------------------*/
 @import "settings";
-
-@import "components.body";
 
 /*------------------------------------*\
   #TOOLS
@@ -32,22 +31,17 @@
   #COMPONENTS
 \*------------------------------------*/
 
-
-
 @import "components.logo";
 @import "components.nav";
-
+@import "components.admin-bar";
 
 @import "components.form";
 @import "components.edit";
 
-
-@import 'components.table';
+@import "components.table";
 @import "components.graph";
 
-
 @import "components.settings";
-
 
 
 /*------------------------------------*\

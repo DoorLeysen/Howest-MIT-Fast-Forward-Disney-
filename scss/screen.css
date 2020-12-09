@@ -5,10 +5,6 @@
 /*------------------------------------*\
   #SETTINGS
 \*------------------------------------*/
-body {
-  width: 100%;
-}
-
 /*------------------------------------*\
   #TOOLS
 \*------------------------------------*/
@@ -12094,6 +12090,10 @@ body {
   display: flex;
 }
 
+main {
+  width: 100%;
+}
+
 /*------------------------------------*\
   #OBJECTS
 \*------------------------------------*/
@@ -12319,6 +12319,55 @@ body {
 
 .c-nav__footer-phone-helpdesk-link:hover {
   color: #5975db;
+}
+
+.c-admin-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #121751;
+  width: 100%;
+  padding: 2.5rem 3rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.c-admin-bar__admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.c-admin-bar__icon {
+  width: 5.5rem;
+  fill: #ffffff;
+}
+
+@media (max-width: 767.98px) {
+  .c-admin-bar__icon {
+    width: 3.5rem;
+  }
+}
+
+.c-admin-bar__tekst {
+  font-size: 2rem;
+  margin: 0;
+  margin-left: 2rem;
+  color: #ffffff;
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 767.98px) {
+  .c-admin-bar__tekst {
+    font-size: 1.6rem;
+  }
 }
 
 .c-edit__title {
