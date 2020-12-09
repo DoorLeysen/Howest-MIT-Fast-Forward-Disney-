@@ -5,10 +5,19 @@ $color-black: #000000;
 $color-green: #07CB21;
 $color-red: #D62D2D;
 
+$color-darkblue: #151758;
+
 
 //Font
 $font-family: "Gadugi";
 $font-weight-bold: 700;
+
+$btn-font-family: arial ;
+$btn-padding-y:0.7rem;
+$btn-padding-x:1.5rem;
+$btn-font-size: 1.3rem;
+$btn-border-radius: 7px;
+$primary: $color-darkblue;
 
 
 $grid-breakpoints: (
