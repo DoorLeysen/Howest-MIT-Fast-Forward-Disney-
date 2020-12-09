@@ -12467,7 +12467,7 @@ body {
   vertical-align: top;
 }
 
-@media only screen and (max-width: 992px), (min-device-width: 992px) and (max-device-width: 1024px) {
+@media only screen and (max-width: 1725px), (min-device-width: 992px) and (max-device-width: 1024px) {
   .table {
     /* Force table to not be like tables anymore */
     /* Hide table headers (but not display: none;, for accessibility) */
@@ -12484,26 +12484,38 @@ body {
     position: absolute;
     top: -9999px;
     left: -9999px;
+    margin-top: 5rem;
   }
   .table tr {
-    margin: 0 0 1rem 0;
+    margin: 0 0 5rem 0;
   }
   .table td {
     /* Behave  like a "row" */
     border: none;
     border-bottom: 1px solid #eee;
     position: relative;
-    padding-left: 50%;
+    padding-left: 30%;
+    width: 80%;
   }
   .table td:before {
     /* Now like a table header */
     position: absolute;
     /* Top/left values mimic padding */
-    top: 0;
+    top: 8px;
     left: 6px;
-    width: 45%;
     padding-right: 10px;
     white-space: nowrap;
+  }
+  .table .table__row--edit__row--edit--icon {
+    width: 1rem;
+    height: 1rem;
+  }
+  .table .table__row--edit__row--edit--icon:hover path {
+    fill: #07CB21;
+  }
+  .table .table__row--delete__row--delete--icon {
+    width: 1rem;
+    height: 1rem;
   }
   .table td:nth-of-type(1):before {
     content: "UserID";
@@ -12522,15 +12534,11 @@ body {
   }
   .table td:nth-of-type(6):before {
     content: "Edit";
+    margin-top: 1px;
   }
   .table td:nth-of-type(7):before {
     content: "Delete";
-  }
-}
-
-@media (max-width: 1687.98px) {
-  .table {
-    margin-right: 50px;
+    margin-top: 4px;
   }
 }
 
@@ -12546,20 +12554,20 @@ body {
   margin-right: 0rem;
 }
 
-@media (max-width: 1687.98px) {
-  .table__row--number {
-    min-width: 123px;
-  }
-}
-
 .table__row--name {
   width: 259px;
   margin-right: 0rem;
 }
 
-@media (max-width: 1687.98px) {
+@media only screen and (max-width: 1750px) {
   .table__row--name {
-    min-width: 207px;
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width: 1705px) {
+  .table__row--name {
+    width: 225px;
   }
 }
 
@@ -12568,9 +12576,9 @@ body {
   margin-right: 0rem;
 }
 
-@media (max-width: 1687.98px) {
+@media only screen and (max-width: 1765px) {
   .table__row--mail {
-    min-width: 323px;
+    width: 355px;
   }
 }
 
@@ -12579,9 +12587,9 @@ body {
   margin-right: 0rem;
 }
 
-@media (max-width: 1687.98px) {
+@media only screen and (max-width: 1850px) {
   .table__row--user-since {
-    min-width: 120px;
+    width: 200px;
   }
 }
 
@@ -12590,9 +12598,15 @@ body {
   margin-right: 0rem;
 }
 
-@media (max-width: 1687.98px) {
+@media only screen and (max-width: 1850px) {
   .table__row--subscription {
-    min-width: 139px;
+    width: 167px;
+  }
+}
+
+@media only screen and (max-width: 1820px) {
+  .table__row--subscription {
+    width: 145px;
   }
 }
 
@@ -12609,12 +12623,6 @@ body {
   text-align: center;
 }
 
-@media (max-width: 1687.98px) {
-  .table__row--edit {
-    min-width: 49px;
-  }
-}
-
 .table__row--edit--icon {
   width: 2.5rem;
 }
@@ -12626,12 +12634,6 @@ body {
 .table__row--delete {
   width: 47px;
   text-align: center;
-}
-
-@media (max-width: 1687.98px) {
-  .table__row--delete {
-    min-width: 49px;
-  }
 }
 
 .table__row--delete:hover path {
@@ -12648,23 +12650,30 @@ body {
   margin-right: auto;
 }
 
+@media only screen and (max-width: 1860px) {
+  .c-pagination {
+    margin-left: 9vw;
+    margin-right: auto;
+  }
+}
+
 @media (max-width: 1687.98px) {
   .c-pagination {
-    margin-left: 33vw;
+    margin-left: 11vw;
     margin-right: auto;
   }
 }
 
 @media (max-width: 1199.98px) {
   .c-pagination {
-    margin-left: 43vw;
+    margin-left: 12vw;
     margin-right: auto;
   }
 }
 
 @media (max-width: 991.98px) {
   .c-pagination {
-    margin-left: 70vw;
+    margin-left: 15vw;
     margin-right: auto;
   }
 }
