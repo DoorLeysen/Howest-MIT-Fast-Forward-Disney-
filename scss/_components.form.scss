@@ -13,11 +13,24 @@
     &__description{
         height: 15rem;
     }
+    &__btn{
+        background-color: $color-lightblue ;
+        color: $color-white;
+        font-weight: bold;
+        &:hover{
+            color: $color-darkblue ;
+        }
+    }
+    &__btnalign{
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 .form-label{
     font-size: 2rem;
 }
-// .c-right__input{
-//     border-radius: 8rem;
-// }
+
+.col-transparent{
+    opacity: 0;
+}

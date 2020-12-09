@@ -12392,8 +12392,31 @@ main {
   height: 15rem;
 }
 
+.c-right__btn {
+  background-color: #0090FF;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.c-right__btn:hover {
+  color: #151758;
+}
+
+.c-right__btnalign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .form-label {
   font-size: 2rem;
+}
+
+.col-transparent {
+  opacity: 0;
 }
 
 .c-left {
