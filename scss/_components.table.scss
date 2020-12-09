@@ -161,7 +161,7 @@
 			border-bottom: 1px solid #eee;
 			position: relative;
       padding-left: 30%;
-      width: 80%;
+      width: 55rem;
 		}
 
 		td:before {
@@ -197,15 +197,14 @@
 
 		/*
 		Label the data
-    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, 
+    this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
 		*/
 		td:nth-of-type(1):before { content: "UserID"; }
 		td:nth-of-type(2):before { content: "Name"; }
 		td:nth-of-type(3):before { content: "E-mail"; }
 		td:nth-of-type(4):before { content: "User since"; }
 		td:nth-of-type(5):before { content: "Subscription"; }
-    td:nth-of-type(6):before { content: "Edit"; margin-top: 1px;}
-    td:nth-of-type(7):before { content: "Delete"; margin-top: 4px;}
 		
   }
   
@@ -218,37 +217,37 @@
   }
 
   &__row {
+
     &--number {
-      width: 122px;
+      width: 163px ;
       margin-right: 0rem;
 
     }
 
     &--name {
-      width: 259px;
+      width: 267px;
       margin-right: 0rem;
 
       @media only screen and (max-width: 1750px) {
-        width: 240px;
+        width: 220px;
         }
 
         @media only screen and (max-width: 1705px) {
-          width: 225px;
+          width: 210px;
           }
     }
 
     &--mail {
-      width: 376px;
+      width: 391px;
       margin-right: 0rem;
 
       @media only screen and (max-width: 1765px) {
         width: 355px;
         }
-
     }
 
     &--user-since {
-      width: 268px;
+      width: 278px;
       margin-right: 0rem;
 
       @media only screen and (max-width: 1850px) {
@@ -257,7 +256,7 @@
     }
 
     &--subscription {
-      width: 167px;
+      width: 175px;
       margin-right: 0rem;
 
       @media only screen and (max-width: 1850px) {
@@ -267,6 +266,7 @@
         @media only screen and (max-width: 1820px) {
           width: 145px;
           }
+
 
       &--active {
         color: $color-green;
@@ -374,7 +374,6 @@
   }
 
   &__arrow--right {
-    //margin-left: 13px;
     width: 40px;
     height: 40px;
     padding-top: 3px;

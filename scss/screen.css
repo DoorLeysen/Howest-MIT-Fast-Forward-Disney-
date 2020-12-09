@@ -2439,7 +2439,6 @@ pre code {
 }
 
 .table {
-  width: 100%;
   margin-bottom: 1rem;
   color: #212529;
 }
@@ -12615,7 +12614,8 @@ main {
     /* Hide table headers (but not display: none;, for accessibility) */
     /*
 		Label the data
-    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, 
+    this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
 		*/
   }
   .table table, .table thead, .table tbody, .table th, .table td, .table tr {
@@ -12637,7 +12637,7 @@ main {
     border-bottom: 1px solid #eee;
     position: relative;
     padding-left: 30%;
-    width: 80%;
+    width: 55rem;
   }
   .table td:before {
     /* Now like a table header */
@@ -12674,14 +12674,6 @@ main {
   .table td:nth-of-type(5):before {
     content: "Subscription";
   }
-  .table td:nth-of-type(6):before {
-    content: "Edit";
-    margin-top: 1px;
-  }
-  .table td:nth-of-type(7):before {
-    content: "Delete";
-    margin-top: 4px;
-  }
 }
 
 .table__title {
@@ -12692,29 +12684,29 @@ main {
 }
 
 .table__row--number {
-  width: 122px;
+  width: 163px;
   margin-right: 0rem;
 }
 
 .table__row--name {
-  width: 259px;
+  width: 267px;
   margin-right: 0rem;
 }
 
 @media only screen and (max-width: 1750px) {
   .table__row--name {
-    width: 240px;
+    width: 220px;
   }
 }
 
 @media only screen and (max-width: 1705px) {
   .table__row--name {
-    width: 225px;
+    width: 210px;
   }
 }
 
 .table__row--mail {
-  width: 376px;
+  width: 391px;
   margin-right: 0rem;
 }
 
@@ -12725,7 +12717,7 @@ main {
 }
 
 .table__row--user-since {
-  width: 268px;
+  width: 278px;
   margin-right: 0rem;
 }
 
@@ -12736,7 +12728,7 @@ main {
 }
 
 .table__row--subscription {
-  width: 167px;
+  width: 175px;
   margin-right: 0rem;
 }
 
@@ -12877,6 +12869,7 @@ main {
   margin-top: 62px;
   margin-left: 54px;
   margin-bottom: 45px;
+  font-weight: 700;
 }
 
 .chart {
