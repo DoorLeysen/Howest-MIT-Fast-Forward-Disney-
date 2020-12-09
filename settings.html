@@ -8,15 +8,24 @@
     <link rel="stylesheet" href="scss/screen.css" />
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/61efba2fcb.js" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/61efba2fcb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/index.js"></script>
   </head>
   <body>
+    <!-- Hier komt nog de navigatie -->
     <nav class="c-nav">
       <input class="c-nav__toggle js-nav-toggle" type="checkbox">
       <div class="c-nav__bars">
@@ -106,156 +115,38 @@
       </footer>
     </nav>
     <main>
+      <!-- Hier komt nog de header -->
       <!-- Hierin verwerk je verder je inhoud -->
-
-
-      <div class="container c-edit">
-
-        <div class="row c-left">
-          <div class="col">
-            <h1 class="c-left__title">Edit page</h1>
-            <img class="c-left__img" src="img/edit.png" alt="edit image">
-
-            <div class="c-left___genres">
-              <h2 class="c-left__genres__title">Genres</h2>
-
-              <div class="row c-left__genres__btns">
-                <button type="button" class="btn c-left___genres__button col"> Fantasy </button>
-                <button type="button" class="btn c-left___genres__button col"> Mysterie </button>
-                <button type="button" class="btn c-left___genres__button col"> Comedy </button>
-                <button type="button" class="btn c-left___genres__button col"> Drama </button>
-              </div>
-
-              <div class="row c-left__genres__btns">
-                <button type="button" class="btn c-left___genres__button col"> Action </button>
-                <button type="button" class="btn c-left___genres__button col"> Scifi </button>
-                <button type="button" class="btn c-left___genres__button col"> Comedy </button>
-                <button type="button" class="btn c-left___genres__button col"> Romance </button>
-              </div>
-
-              <h2 class="c-left__h2"> Publication </h2>
-              <h3 class="c-left__h3">Date online</h3>
-
-              <div class="row c-left___date">
-                
-
-                  <select class="form-select col-2 c-left___date__selectM " id="validationCustom04" required>
-                    <option selected disabled value=""></option>
-                    <option>...</option>
-                  </select>
-
-                  <select class="form-select col-3 c-left___date__selectL" id="validationCustom04" required>
-                    <option selected disabled value=""></option>
-                    <option>...</option>
-                  </select>
-                  <select class="form-select col-2 c-left___date__selectM c-left___date__selectMspace" id="validationCustom04" required>
-                    <option selected disabled value=""></option>
-                    <option>...</option>
-                  </select>
-                  <div class="col-2"></div>
-                  <select class="form-select col-1 c-left___date__selectS" id="validationCustom04" required>
-                    <option selected disabled value=""></option>
-                    <option>...</option>
-                  </select>
-                  
-                  <select class="form-select col-1 c-left___date__selectS" id="validationCustom04" required>
-                    <option selected disabled value=""></option>
-                    <option>...</option>
-                  </select>
-
-              </div>
-              <h3 class="c-left__h3">Date offline</h3>
-              <div class="row c-left___date">
-                
-
-                <select class="form-select col-2 c-left___date__selectM " id="validationCustom04" required>
-                  <option selected disabled value=""></option>
-                  <option>...</option>
-                </select>
-
-                <select class="form-select col-3 c-left___date__selectL" id="validationCustom04" required>
-                  <option selected disabled value=""></option>
-                  <option>...</option>
-                </select>
-                <select class="form-select col-2 c-left___date__selectM c-left___date__selectMspace" id="validationCustom04" required>
-                  <option selected disabled value=""></option>
-                  <option>...</option>
-                </select>
-                <div class="col-2"></div>
-                <select class="form-select col-1 c-left___date__selectS" id="validationCustom04" required>
-                  <option selected disabled value=""></option>
-                  <option>...</option>
-                </select>
-                
-                <select class="form-select col-1 c-left___date__selectS" id="validationCustom04" required>
-                  <option selected disabled value=""></option>
-                  <option>...</option>
-                </select>
-
-            </div>
-            </div>  
-
+      <div class="container c-settings">
+        <h1 class="c-settings__title">Settings</h1>
+        <div class="c-settings--flex">
+          <div class="c-settings__box">
+            <h2>User limits</h2>
+            <label for="family" class="c-settings__label">Family subaccount max</label>
+            <input type="text" class="c-settings__input" name="family" placeholder="Maximum subaccounts">
           </div>
-
-          <div class="col c-right">
-            <form>
-              <div class="mb-3 c-right__label c-right__label__title">
-                <label for="exampleInputEmail1" class="form-label ">Title</label>
-                <input type="email" class="form-control c-right__input" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-              </div>
-
-              <div class="mb-3 c-right__label">
-                <label for="exampleInputEmail1" class="form-label">Director</label>
-                <input type="email" class="form-control c-right__input" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-              </div>
-              <div class="mb-3 c-right__label">
-                <label for="exampleInputEmail1" class="form-label">Actors</label>
-                <input type="email" class="form-control c-right__input" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-              </div>
-
-              <div class="mb-3 c-right__label">
-                <label for="exampleInputEmail1" class="form-label">Time movie</label>
-                <input type="email" class="form-control c-right__input" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-              </div>
-
-              <div class="mb-3 c-right__label">
-                <label for="exampleInputEmail1" class="form-label">Release date</label>
-                <input type="email" class="form-control c-right__input" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-              </div>
-
-              <div class="mb-3 c-right__label">
-                <label for="exampleInputEmail1" class="form-label">Description</label>
-                <input type="email" class="form-control  c-right__input c-right__description" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-              </div>
-
-              <div class="mb-3 c-right__label">
-                <label for="exampleInputEmail1" class="form-label">Movie (url)</label>
-                <input type="email" class="form-control c-right__input" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-              </div>
-
-              <div class="mb-3 c-right__label">
-                <label for="exampleInputEmail1" class="form-label">Trailer (url)</label>
-                <input type="email" class="form-control c-right__input" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-              </div>
-            </form>
-            
+          <div class="c-settings__box">
+            <h2>Subscription settings</h2>
+            <label for="price" class="c-settings__label">Price per month</label>
+            <input type="text" class="c-settings__input" name="price" placeholder="Price">
           </div>
-         </div>
-          
+          <div class="c-settings__box">
+            <h2>Current promotions</h2>
+            <label for="promocode" class="c-settings__label">Promotional code</label>
+            <input type="text" class="c-settings__input" name="promocode" placeholder="Code">
+            <label for="discount" class="c-settings__label">Discount amount</label>
+            <input type="text" class="c-settings__input c-settings__input--percentage" name="discount" placeholder="Discount percentage"><span>%</span>
+          </div>
+          <div class="c-settings__box">
+            <h2>Website layout</h2>
+            <label for="background" class="c-settings__label">Background color</label>
+            <input type="text" class="c-settings__input" name="background" placeholder="Background color">
+            <label for="text" class="c-settings__label">Text color</label>
+            <input type="text" class="c-settings__input" name="text" placeholder="Text color">
+          </div>
         </div>
-        
+        <input type="button" class="c-settings__button" value="Save">
       </div>
-
-
-
     </main>
   </body>
 </html>

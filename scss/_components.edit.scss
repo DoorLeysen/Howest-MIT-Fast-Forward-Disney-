@@ -1,7 +1,76 @@
-.c-edit{
-    &__title{
-    color: $color-white;
-    font-size: 9rem;
-    }
-    
+.c-left{
+    margin-left:2%;
 }
+.c-left{
+    &__title{
+        color: $color-white;
+        font-size: 4rem;
+        font-weight: bold;
+        padding:3rem 0px;
+        }
+    &__h2{
+        color: $color-white;
+        font-weight: bold;
+        padding-top: 4rem;
+    }
+    &__h3{
+        color: $color-white;
+        font-weight: bold;
+        padding-top: 2rem;
+    }
+    &__img{
+        background-color: white;
+        border-radius: 2rem;
+        width: 100%;
+    }
+    &__genres{
+        &__title{
+            color: $color-white;
+            font-weight: bold;
+            padding-top:  2.5rem;
+        }
+        &__button{
+
+        }
+        &__btns{
+            padding-top: 1.8rem;
+        }
+    }
+}
+.c-left___genres__button{
+    font-size: 1.3rem;
+    color: #2D64C2;
+    background-color: $color-darkblue ;
+    border-radius: 7px;
+    padding: 0.7rem 1.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    &:hover{
+        color: $color-white;
+    }
+}
+
+.form-select{
+    // border-radius: 7px;
+}
+
+.c-left___date{
+    padding-left:1.5rem;
+}
+.c-left___date__selectS{
+    border-radius: 7px;
+    margin-right: 1rem;
+}
+.c-left___date__selectM{
+    // width:10px;
+    border-radius: 7px;
+    margin-right: 1rem;
+}
+.c-left___date__selectL{
+    // width:10px;
+    border-radius: 7px;
+    margin-right: 1rem;
+}
+// .c-left___date__selectMspace{
+//     margin-right:3rem;
+// }
