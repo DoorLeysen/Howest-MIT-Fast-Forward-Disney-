@@ -24,6 +24,23 @@
   margin-bottom: 68px;
   height: 40px;
 
+  @media only screen and (max-width: 1150px) {
+    flex-direction: column;
+    margin-bottom: 14vw;
+  }
+
+  @media only screen and (max-width: 800px) {
+    margin-bottom: 22vw;
+  }
+
+  @media only screen and (max-width: 576px) {
+    margin-bottom: 35vw;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-left: 25px;
+  }
+
   &__title {
     color: $color-white;
     padding-top: 3px;
@@ -32,6 +49,22 @@
     font-weight: $font-weight-bold;
     margin-right: 38px;
     letter-spacing: 1.3px;
+
+    @media only screen and (max-width: 1150px) {
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width: 800px) {
+      margin-bottom: 4vw;
+    }
+
+    @media only screen and (max-width: 576px) {
+      margin-bottom: 8vw;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+    }
   }
 
   &__button--asc {
@@ -43,7 +76,7 @@
     text-decoration: none;
     display: inline-block;
     padding: 0;
-    margin: 0px;
+    margin-right: -6px;
     border-radius: 10px 0px 0px 10px;
     font-weight: $font-weight-bold;
     width: 85px;
@@ -53,11 +86,16 @@
     border-right: 1px solid black;
 
     &:active,
-    &:focus{
+    &:focus {
       background-color: #2642b1;
       color: $color-white;
       outline: none;
-   
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;
+      width: 60x;
+      height: 35px;
     }
   }
 
@@ -83,6 +121,12 @@
       color: $color-white;
       outline: none;
     }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;
+      width: 60x;
+      height: 35px;
+    }
   }
 }
 
@@ -90,6 +134,24 @@
   position: relative;
   display: inline-block;
   height: 40px;
+
+  @media only screen and (max-width: 1150px) {
+    margin-bottom: 2vw;
+  }
+
+  @media only screen and (max-width: 800px) {
+    margin-bottom: 4vw;
+  }
+
+  @media only screen and (max-width: 576px) {
+    margin-bottom: 6vw;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+    width: 60x;
+    height: 35px;
+  }
 }
 
 .dropdown-content {
@@ -134,52 +196,59 @@
   margin-bottom: 34px;
   vertical-align: top;
 
-  @media only screen and (max-width: 1725px), (min-device-width: 992px) and (max-device-width: 1024px)  {
-
-		/* Force table to not be like tables anymore */
-		table, thead, tbody, th, td, tr {
+  @media only screen and (max-width: 1725px),
+    (min-device-width: 992px) and (max-device-width: 1024px) {
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
       display: block;
       text-align: left;
-		}
+    }
 
-		/* Hide table headers (but not display: none;, for accessibility) */
-		thead tr {
-			position: absolute;
-			top: -9999px;
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+      position: absolute;
+      top: -9999px;
       left: -9999px;
       margin-top: 5rem;
-		}
+    }
 
     tr {
       margin: 0 0 5rem 0;
     }
-      
-    
-		td {
-			/* Behave  like a "row" */
-			border: none;
-			border-bottom: 1px solid #eee;
-			position: relative;
-      padding-left: 30%;
-      width: 55rem;
-		}
 
-		td:before {
-			/* Now like a table header */
-			position: absolute;
-			/* Top/left values mimic padding */
-			top: 8px;
-			left: 6px;
-			padding-right: 10px;
-			white-space: nowrap;
+    td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 40%;
+      width: 45rem;
+
+      @include media-breakpoint-down(md) {
+        max-width: 30rem;
+        padding-left: 40%;
+      }
     }
-    
-    .table__row--edit {
 
+    td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 8px;
+      left: 6px;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+
+    .table__row--edit {
       &__row--edit--icon {
         width: 1rem;
         height: 1rem;
-
 
         &:hover path {
           fill: $color-green;
@@ -188,26 +257,41 @@
     }
 
     .table__row--delete {
-
       &__row--delete--icon {
         width: 1rem;
         height: 1rem;
       }
     }
 
-		/*
+    /*
 		Label the data
     You could also use a data-* attribute and content for this. That way "bloats" the HTML, 
     this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
 		*/
-		td:nth-of-type(1):before { content: "UserID"; }
-		td:nth-of-type(2):before { content: "Name"; }
-		td:nth-of-type(3):before { content: "E-mail"; }
-		td:nth-of-type(4):before { content: "User since"; }
-		td:nth-of-type(5):before { content: "Subscription"; }
-		
+    td:nth-of-type(1):before {
+      content: "UserID";
+    }
+    td:nth-of-type(2):before {
+      content: "Name";
+    }
+    td:nth-of-type(3):before {
+      content: "E-mail";
+    }
+    td:nth-of-type(4):before {
+      content: "User since";
+    }
+    td:nth-of-type(5):before {
+      content: "Subscription";
+    }
   }
-  
+
+  @include media-breakpoint-down(md) {
+    font-size: 12px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-left: 25px;
+  }
 
   &__title {
     border: none;
@@ -217,11 +301,9 @@
   }
 
   &__row {
-
     &--number {
-      width: 163px ;
+      width: 163px;
       margin-right: 0rem;
-
     }
 
     &--name {
@@ -230,11 +312,11 @@
 
       @media only screen and (max-width: 1750px) {
         width: 220px;
-        }
+      }
 
-        @media only screen and (max-width: 1705px) {
-          width: 210px;
-          }
+      @media only screen and (max-width: 1705px) {
+        width: 210px;
+      }
     }
 
     &--mail {
@@ -243,7 +325,7 @@
 
       @media only screen and (max-width: 1765px) {
         width: 355px;
-        }
+      }
     }
 
     &--user-since {
@@ -252,7 +334,7 @@
 
       @media only screen and (max-width: 1850px) {
         width: 200px;
-        }
+      }
     }
 
     &--subscription {
@@ -261,12 +343,11 @@
 
       @media only screen and (max-width: 1850px) {
         width: 167px;
-        }
+      }
 
-        @media only screen and (max-width: 1820px) {
-          width: 145px;
-          }
-
+      @media only screen and (max-width: 1820px) {
+        width: 145px;
+      }
 
       &--active {
         color: $color-green;
@@ -280,7 +361,6 @@
     &--edit {
       width: 47px;
       text-align: center;
-
 
       &--icon {
         width: 2.5rem;
@@ -320,17 +400,17 @@
   @include media-breakpoint-down(xl) {
     margin-left: 11vw;
     margin-right: auto;
-    }
+  }
 
-    @include media-breakpoint-down(lg) {
-      margin-left: 12vw;
-      margin-right: auto;
-      }
+  @include media-breakpoint-down(lg) {
+    margin-left: 12vw;
+    margin-right: auto;
+  }
 
-      @include media-breakpoint-down(md) {
-        margin-left: 15vw;
-        margin-right: auto;
-        }
+  @include media-breakpoint-down(md) {
+    margin-left: 15vw;
+    margin-right: auto;
+  }
 
   &__buttons {
     display: flex;
@@ -351,9 +431,9 @@
     padding-top: 5px;
     margin-right: 10px;
 
-    &:hover{
+    &:hover {
       background-color: $color-white;
-      color: #2C9CFF;
+      color: #2c9cff;
     }
 
     &--text {
@@ -368,7 +448,7 @@
     height: 40px;
     padding-top: 3px;
 
-    &:hover svg{
+    &:hover svg {
       color: $color-white;
     }
   }

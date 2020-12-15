@@ -12524,6 +12524,34 @@ main {
   height: 40px;
 }
 
+@media only screen and (max-width: 1150px) {
+  .c-filter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 14vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .c-filter {
+    margin-bottom: 22vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-filter {
+    margin-bottom: 35vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-filter {
+    margin-left: 25px;
+  }
+}
+
 .c-filter__title {
   color: #ffffff;
   padding-top: 3px;
@@ -12532,6 +12560,33 @@ main {
   font-weight: 700;
   margin-right: 38px;
   letter-spacing: 1.3px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .c-filter__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .c-filter__title {
+    margin-bottom: 4vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-filter__title {
+    margin-bottom: 8vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-filter__title {
+    font-size: 16px;
+  }
 }
 
 .c-filter__button--asc {
@@ -12543,7 +12598,7 @@ main {
   text-decoration: none;
   display: inline-block;
   padding: 0;
-  margin: 0px;
+  margin-right: -6px;
   border-radius: 10px 0px 0px 10px;
   font-weight: 700;
   width: 85px;
@@ -12557,6 +12612,14 @@ main {
   background-color: #2642b1;
   color: #ffffff;
   outline: none;
+}
+
+@media (max-width: 767.98px) {
+  .c-filter__button--asc {
+    font-size: 14px;
+    width: 60x;
+    height: 35px;
+  }
 }
 
 .c-filter__button--desc {
@@ -12582,10 +12645,44 @@ main {
   outline: none;
 }
 
+@media (max-width: 767.98px) {
+  .c-filter__button--desc {
+    font-size: 14px;
+    width: 60x;
+    height: 35px;
+  }
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
   height: 40px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .dropdown {
+    margin-bottom: 2vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .dropdown {
+    margin-bottom: 4vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .dropdown {
+    margin-bottom: 6vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .dropdown {
+    font-size: 14px;
+    width: 60x;
+    height: 35px;
+  }
 }
 
 .dropdown-content {
@@ -12643,7 +12740,12 @@ main {
     this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
 		*/
   }
-  .table table, .table thead, .table tbody, .table th, .table td, .table tr {
+  .table table,
+  .table thead,
+  .table tbody,
+  .table th,
+  .table td,
+  .table tr {
     display: block;
     text-align: left;
   }
@@ -12661,9 +12763,19 @@ main {
     border: none;
     border-bottom: 1px solid #eee;
     position: relative;
-    padding-left: 30%;
-    width: 55rem;
+    padding-left: 40%;
+    width: 45rem;
   }
+}
+
+@media only screen and (max-width: 1725px) and (max-width: 991.98px), (min-device-width: 992px) and (max-device-width: 1024px) and (max-width: 991.98px) {
+  .table td {
+    max-width: 30rem;
+    padding-left: 40%;
+  }
+}
+
+@media only screen and (max-width: 1725px), (min-device-width: 992px) and (max-device-width: 1024px) {
   .table td:before {
     /* Now like a table header */
     position: absolute;
@@ -12698,6 +12810,18 @@ main {
   }
   .table td:nth-of-type(5):before {
     content: "Subscription";
+  }
+}
+
+@media (max-width: 991.98px) {
+  .table {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .table {
+    margin-left: 25px;
   }
 }
 
@@ -12864,7 +12988,7 @@ main {
 
 .c-pagination__button:hover {
   background-color: #ffffff;
-  color: #2C9CFF;
+  color: #2c9cff;
 }
 
 .c-pagination__button--text {
@@ -12897,6 +13021,12 @@ main {
   font-weight: 700;
 }
 
+@media (max-width: 767.98px) {
+  .c-title__usermanagement {
+    margin-left: 55px;
+  }
+}
+
 .chart {
   width: 900px;
 }
@@ -12911,10 +13041,34 @@ main {
   -webkit-animation: fadeIn 600ms cubic-bezier(0.57, 0.25, 0.65, 1) 1 forwards;
           animation: fadeIn 600ms cubic-bezier(0.57, 0.25, 0.65, 1) 1 forwards;
   opacity: 0;
-  max-width: 640px;
+  max-width: 115rem;
   width: 100%;
   margin-bottom: 57px;
-  margin-left: 54px;
+  margin-left: 50px;
+}
+
+@media (max-width: 1687.98px) {
+  .line-chart {
+    max-width: 55rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .line-chart {
+    max-width: 40rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .line-chart {
+    max-width: 30rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .line-chart {
+    max-width: 20rem;
+  }
 }
 
 .aspect-ratio {

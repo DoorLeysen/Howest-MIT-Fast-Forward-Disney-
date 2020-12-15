@@ -2,9 +2,9 @@
 var chart    = document.getElementById('chart').getContext('2d'),
     gradient = chart.createLinearGradient(0, 0, 0, 450);
 
-gradient.addColorStop(0, 'rgba(255, 0,0, 0.5)');
-gradient.addColorStop(0.5, 'rgba(255, 0, 0, 0.25)');
-gradient.addColorStop(1, 'rgba(255, 0, 0, 0)');
+gradient.addColorStop(0, 'rgba(255, 0,0, 0.7)');
+gradient.addColorStop(0.5, 'rgba(255, 0, 0, 0.5)');
+gradient.addColorStop(1, 'rgba(255, 0, 0, 0.3)');
 
 
 var data  = {
