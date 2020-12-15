@@ -392,12 +392,13 @@
   margin-left: 30vw;
   margin-right: auto;
 
-  @media only screen and (max-width: 1860px) {
+  /*@media only screen and (max-width: 1860px) {
     margin-left: 9vw;
     margin-right: auto;
-  }
+  }*/
 
-  @include media-breakpoint-down(xl) {
+  @media only screen and (max-width: 1725px),
+  (min-device-width: 992px) and (max-device-width: 1024px) {    
     margin-left: 11vw;
     margin-right: auto;
   }
@@ -408,9 +409,16 @@
   }
 
   @include media-breakpoint-down(md) {
-    margin-left: 15vw;
+    margin-left: 8vw;
     margin-right: auto;
   }
+
+  
+  @include media-breakpoint-down(sm) {
+    margin-left: 6vw;
+    margin-right: auto;
+  }
+
 
   &__buttons {
     display: flex;

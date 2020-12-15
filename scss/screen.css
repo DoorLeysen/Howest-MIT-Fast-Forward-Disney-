@@ -12931,16 +12931,13 @@ main {
 .c-pagination {
   margin-left: 30vw;
   margin-right: auto;
-}
-
-@media only screen and (max-width: 1860px) {
-  .c-pagination {
+  /*@media only screen and (max-width: 1860px) {
     margin-left: 9vw;
     margin-right: auto;
-  }
+  }*/
 }
 
-@media (max-width: 1687.98px) {
+@media only screen and (max-width: 1725px), (min-device-width: 992px) and (max-device-width: 1024px) {
   .c-pagination {
     margin-left: 11vw;
     margin-right: auto;
@@ -12956,7 +12953,14 @@ main {
 
 @media (max-width: 991.98px) {
   .c-pagination {
-    margin-left: 15vw;
+    margin-left: 8vw;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-pagination {
+    margin-left: 6vw;
     margin-right: auto;
   }
 }
