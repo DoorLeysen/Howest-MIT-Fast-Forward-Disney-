@@ -12914,6 +12914,12 @@ main {
   fill: #07CB21;
 }
 
+@media (max-width: 991.98px) {
+  .table__row--edit--icon {
+    width: 2rem;
+  }
+}
+
 .table__row--delete {
   width: 47px;
   text-align: center;
@@ -12925,6 +12931,12 @@ main {
 
 .table__row--delete--icon {
   width: 2.5rem;
+}
+
+@media (max-width: 991.98px) {
+  .table__row--delete--icon {
+    width: 2rem;
+  }
 }
 
 /*-----------------------------------------------pagination ---------------------------------------*/

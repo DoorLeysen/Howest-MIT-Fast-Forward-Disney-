@@ -367,8 +367,12 @@
 
         &:hover path {
           fill: $color-green;
+        }@include media-breakpoint-down(md) {
+          width: 2rem;
         }
       }
+
+      
     }
 
     &--delete {
@@ -381,6 +385,10 @@
 
       &--icon {
         width: 2.5rem;
+
+        @include media-breakpoint-down(md) {
+          width: 2rem;
+        }
       }
     }
   }

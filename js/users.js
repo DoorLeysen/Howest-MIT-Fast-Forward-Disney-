@@ -24,7 +24,7 @@ const verwerkenUserData = function (jsonUserData) {
       <td class="table__row--name">${user.firstName} ${user.lastName}</td>
       <td class="table__row--mail">${user.email}</td>
       <td class="table__row--user-since">${user.created}</td>
-      <td class="table__row--subscription table__row--subscription--active">
+      <td id="subscription" class="table__row--subscription table__row--subscription--active">
       ${user.status}
       </td>
       <td class="table__row--edit">
@@ -83,25 +83,6 @@ const laadUserData = function () {
 };
 
 
-/*const fs = require('fs');
-
-let student = { 
-    name: 'Mike',
-    age: 23, 
-    gender: 'Male',
-    department: 'English',
-    car: 'Honda' 
-};
- 
-let data = JSON.stringify(student, null, 2);
-
-fs.writeFile('student-3.json', data, (err) => {
-    if (err) throw err;
-    console.log('Data written to file');
-});
-
-console.log('This is after the write call');
-*/
 
 document.addEventListener("DOMContentLoaded", function () {
   console.info("DOM geladen");
