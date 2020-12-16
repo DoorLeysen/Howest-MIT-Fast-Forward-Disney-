@@ -12785,12 +12785,29 @@ main {
     padding-right: 10px;
     white-space: nowrap;
   }
-  .table .table__row--edit__row--edit--icon {
+  .table .table__row--edit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-bottom: none;
+  }
+  .table .table__row--edit--icon {
+    margin-right: 1.5vw;
+    margin-top: 0.3vw;
+  }
+  .table .table__row--edit--icon path {
     width: 1rem;
     height: 1rem;
   }
-  .table .table__row--edit__row--edit--icon:hover path {
+  .table .table__row--edit--icon path:hover path {
     fill: #07CB21;
+  }
+  .table .table__row--delete {
+    float: right;
   }
   .table .table__row--delete__row--delete--icon {
     width: 1rem;
@@ -12902,41 +12919,34 @@ main {
 }
 
 .table__row--edit {
-  width: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   text-align: center;
 }
 
 .table__row--edit--icon {
   width: 2.5rem;
+  margin-right: 1vw;
+  margin-top: 0.3vw;
 }
 
 .table__row--edit--icon:hover path {
   fill: #07CB21;
 }
 
-@media (max-width: 991.98px) {
-  .table__row--edit--icon {
-    width: 2rem;
-  }
-}
-
-.table__row--delete {
-  width: 47px;
-  text-align: center;
-}
-
-.table__row--delete:hover path {
-  fill: #D62D2D;
-}
-
 .table__row--delete--icon {
+  float: right;
+  text-align: center;
   width: 2.5rem;
 }
 
-@media (max-width: 991.98px) {
-  .table__row--delete--icon {
-    width: 2rem;
-  }
+.table__row--delete--icon:hover path {
+  fill: #D62D2D;
 }
 
 /*-----------------------------------------------pagination ---------------------------------------*/

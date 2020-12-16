@@ -246,7 +246,16 @@
     }
 
     .table__row--edit {
-      &__row--edit--icon {
+      display: flex;
+      flex-direction: row;
+      border-bottom: none;
+
+      &--icon{
+        margin-right: 1.5vw;        
+        margin-top: 0.3vw;
+      }
+
+      &--icon path{
         width: 1rem;
         height: 1rem;
 
@@ -257,6 +266,7 @@
     }
 
     .table__row--delete {
+      float: right;
       &__row--delete--icon {
         width: 1rem;
         height: 1rem;
@@ -359,36 +369,28 @@
     }
 
     &--edit {
-      width: 47px;
+      display: flex;
+      flex-direction: row;
       text-align: center;
 
       &--icon {
         width: 2.5rem;
+        margin-right: 1vw;
+        margin-top: 0.3vw;
 
         &:hover path {
           fill: $color-green;
-        }@include media-breakpoint-down(md) {
-          width: 2rem;
         }
       }
-
-      
     }
 
-    &--delete {
-      width: 47px;
-      text-align: center;
+    &--delete--icon {
+      float: right;
+      text-align: center;        
+      width: 2.5rem;
 
       &:hover path {
         fill: $color-red;
-      }
-
-      &--icon {
-        width: 2.5rem;
-
-        @include media-breakpoint-down(md) {
-          width: 2rem;
-        }
       }
     }
   }
