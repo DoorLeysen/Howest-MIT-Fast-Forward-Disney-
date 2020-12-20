@@ -8,14 +8,14 @@ gradient.addColorStop(1, 'rgba(255, 0, 0, 0.3)');
 
 
 var data  = {
-	labels: ['nov 2019','dec 2019','jan 2020','feb 2020','maart 2020','april 2020','mei 2020','juni 2020','juli 2020','aug 2020','sept 2020','okt 2020','nov 2020','dec 2020'],
+	labels: ['juli 2020','aug 2020','sept 2020','okt 2020','nov 2020','dec 2020'],
     datasets: [{
-			label: 'Custom Label Name',
+			label: 'Users',
 			backgroundColor: gradient,
 			pointBackgroundColor: 'white',
 			borderWidth: 1,
 			borderColor: '#911215',
-			data: [10000000, 26500000, 27200000,28600000, 37965000, 50000000, 54500000, 57500000,60500000,73700000, 75800000, 77300000,78550000,80000000] 
+			data: [605000000, 737000000, 758000000, 773000000, 785000000, 800000000] 
     }]
 };
 
@@ -32,12 +32,13 @@ var options = {
 			gridLines: {
 				color: 'rgba(0, 0, 0, 0)',
 				lineWidth: 1
+
 			}
 		}],
 		yAxes: [{
 			gridLines: {
 				color: 'rgba(200, 200, 200, 0.08)',
-				lineWidth: 1
+				lineWidth: 1,
 			}
 		}]
 	},
@@ -46,18 +47,22 @@ var options = {
 			tension: 0.4
 		}
 	},
+
 	legend: {
-		display: false
+		display: true
 	},
+
 	point: {
 		backgroundColor: 'white'
 	},
+	
 	tooltips: {
 		titleFontFamily: 'gadugi',
 		backgroundColor: 'rgba(0,0,0,0.1)',
 		titleFontColor: 'white',
 		caretSize: 5,
 		cornerRadius: 2,
+
 		xPadding: 10,
 		yPadding: 10
 	}
