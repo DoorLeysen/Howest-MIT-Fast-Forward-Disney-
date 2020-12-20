@@ -454,6 +454,30 @@
       color: #2c9cff;
     }
 
+
+    &--text {
+      height: 100%;
+      padding: auto;
+    }
+  }
+
+  &__button--1 {
+    color: #2c9cff;
+    background-color: $color-white;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #2c9cff;
+    border-radius: 5px;
+    vertical-align: middle;
+    padding-top: 5px;
+    margin-right: 10px;
+
+    &:hover {
+      background-color: $color-white;
+      color: #2c9cff;
+    }
+
+
     &--text {
       height: 100%;
       padding: auto;
