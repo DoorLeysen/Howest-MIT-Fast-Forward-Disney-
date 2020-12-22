@@ -97,6 +97,7 @@
         "_components.logo.scss",
         "_components.nav.scss",
         "_components.admin-bar.scss",
+        "_components.dashboard.scss",
         "_components.form.scss",
         "_components.edit.scss",
         "_components.table.scss",

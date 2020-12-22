@@ -1,0 +1,146 @@
+.c-dashboard {
+  padding: 2.5rem 6rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__titel {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $color-white;
+  }
+
+  &__filter {
+    display: inline-block;
+    padding: 1rem;
+    background-color: #0072d2;
+    border-radius: 2rem;
+    color: $color-white;
+    position: relative;
+
+    &:hover {
+      .c-dashboard__filter-items {
+        display: block;
+      }
+    }
+
+    &-items {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(0, 100%);
+      padding: 1rem;
+      background-color: #0072d2;
+      border-radius: 2rem;
+    }
+
+    &-item {
+      display: inline-block;
+      text-decoration: none;
+      color: $color-white;
+
+      &--default {
+        &::after {
+          content: "Hallokes";
+          background: url("../icons/arrow-down.svg") no-repeat;
+          background-size: contain;
+          width: 0.8rem;
+          height: 1.3rem;
+        }
+      }
+    }
+  }
+
+  &__primary-items,
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__primary-item,
+  &__content-item {
+    background: linear-gradient(#203174, #5e7be4);
+    border-radius: 2rem;
+    margin: 2.5rem 0;
+    padding: 3rem 4rem;
+    color: $color-white;
+
+    &-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      padding: 0 3rem;
+    }
+
+    &-big-number {
+      font-size: 9rem;
+    }
+  }
+
+  &__content-item--large {
+    width: 58%;
+
+    div {
+      display: flex;
+    }
+  }
+
+  &__content-item-genres {
+    text-align: center;
+
+    p {
+      margin: 2rem 0;
+    }
+
+    .c-dashboard__content-item-button {
+      display: inline-block;
+      padding: 1rem 4rem;
+      background-color: #0090ff;
+      color: $color-white;
+      border-radius: 1rem;
+    }
+  }
+
+  &__content-svg {
+    display: block;
+    width: 40rem;
+  }
+
+  &__icon {
+    text-align: right;
+
+    svg {
+      fill: $color-white;
+      height: 7.2rem;
+    }
+
+    img {
+      height: 7.2rem;
+    }
+  }
+
+  &__title {
+    color: $color-white;
+    font-size: 1.8rem;
+    margin: 1.5rem 0 0 0;
+  }
+
+  &__number {
+    color: $color-white;
+    font-size: 2.2rem;
+    margin: 0;
+  }
+}
