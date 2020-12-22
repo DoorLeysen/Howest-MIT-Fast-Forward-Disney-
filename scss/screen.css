@@ -12096,6 +12096,10 @@ main {
   overflow-y: scroll;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*------------------------------------*\
   #OBJECTS
 \*------------------------------------*/
@@ -12370,6 +12374,168 @@ main {
   .c-admin-bar__tekst {
     font-size: 1.5rem;
   }
+}
+
+.c-dashboard {
+  padding: 2.5rem 6rem;
+}
+
+.c-dashboard__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-dashboard__titel {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.c-dashboard__filter {
+  display: inline-block;
+  padding: 1rem;
+  background-color: #0072d2;
+  border-radius: 2rem;
+  color: #ffffff;
+  position: relative;
+}
+
+.c-dashboard__filter:hover .c-dashboard__filter-items {
+  display: block;
+}
+
+.c-dashboard__filter-items {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+  padding: 1rem;
+  background-color: #0072d2;
+  border-radius: 2rem;
+}
+
+.c-dashboard__filter-item {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.c-dashboard__filter-item--default::after {
+  content: "Hallokes";
+  background: url("../icons/arrow-down.svg") no-repeat;
+  background-size: contain;
+  width: 0.8rem;
+  height: 1.3rem;
+}
+
+.c-dashboard__primary-items, .c-dashboard__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-dashboard__primary-items-row, .c-dashboard__content-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.c-dashboard__primary-item, .c-dashboard__content-item {
+  background: -webkit-gradient(linear, left top, left bottom, from(#203174), to(#5e7be4));
+  background: linear-gradient(#203174, #5e7be4);
+  border-radius: 2rem;
+  margin: 2.5rem 0;
+  padding: 3rem 4rem;
+  color: #ffffff;
+}
+
+.c-dashboard__primary-item-title, .c-dashboard__content-item-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.c-dashboard__primary-item-info, .c-dashboard__content-item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 3rem;
+}
+
+.c-dashboard__primary-item-big-number, .c-dashboard__content-item-big-number {
+  font-size: 9rem;
+}
+
+.c-dashboard__content-item--large {
+  width: 58%;
+}
+
+.c-dashboard__content-item--large div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-dashboard__content-item-genres {
+  text-align: center;
+}
+
+.c-dashboard__content-item-genres p {
+  margin: 2rem 0;
+}
+
+.c-dashboard__content-item-genres .c-dashboard__content-item-button {
+  display: inline-block;
+  padding: 1rem 4rem;
+  background-color: #0090ff;
+  color: #ffffff;
+  border-radius: 1rem;
+}
+
+.c-dashboard__content-svg {
+  display: block;
+  width: 40rem;
+}
+
+.c-dashboard__icon {
+  text-align: right;
+}
+
+.c-dashboard__icon svg {
+  fill: #ffffff;
+  height: 7.2rem;
+}
+
+.c-dashboard__icon img {
+  height: 7.2rem;
+}
+
+.c-dashboard__title {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin: 1.5rem 0 0 0;
+}
+
+.c-dashboard__number {
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin: 0;
 }
 
 .c-right {
