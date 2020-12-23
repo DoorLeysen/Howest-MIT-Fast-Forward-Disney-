@@ -30,7 +30,8 @@
             padding-top:  2.5rem;
         }
         &__button{
-
+            padding-left: -1rem;
+            padding-right: -1rem;
         }
         &__btns{
             padding-top: 1.8rem;
@@ -42,9 +43,10 @@
     color: #2D64C2;
     background-color: $color-darkblue ;
     border-radius: 7px;
-    padding: 0.7rem 1.5rem;
+    padding: 0.7rem 0rem;
+    width: 200%;
     margin-right: 1rem;
-    margin-left: 1rem;
+    // margin-left: -1rem;
     &:hover{
         color: $color-white;
     }
@@ -74,3 +76,4 @@
 // .c-left___date__selectMspace{
 //     margin-right:3rem;
 // }
+
