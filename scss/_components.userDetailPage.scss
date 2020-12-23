@@ -1,0 +1,45 @@
+.c-back__icon {
+  width: 3.5rem;
+  margin-right: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.c-user__form {
+  margin-left: 59px;
+  display: flex;
+  flex-direction: row;
+}
+
+.c-user__info{
+    font-family: $font-family;
+    &--title{
+        color: $color-white;
+        font-size: 2.5rem;
+        font-weight: $font-weight-bold;
+
+        &--adres{
+            color: $color-white;
+            font-size: 2rem;
+            font-weight: $font-weight-bold;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+        }
+    }
+
+    &--label{
+        color: $color-white;
+        font-weight: $font-weight-bold;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    &--input{
+        background-color: $color-white;
+        width: 35rem;
+        height: 3.56rem;
+        margin-bottom: 3.2rem;
+        border-radius: 10px;
+        padding-left: 8px;
+    }
+    
+}
