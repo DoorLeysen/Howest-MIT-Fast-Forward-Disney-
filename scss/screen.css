@@ -12455,6 +12455,11 @@ main {
   padding-top: 2.5rem;
 }
 
+.c-left__genres__button {
+  padding-left: -1rem;
+  padding-right: -1rem;
+}
+
 .c-left__genres__btns {
   padding-top: 1.8rem;
 }
@@ -12464,9 +12469,9 @@ main {
   color: #2D64C2;
   background-color: #151758;
   border-radius: 7px;
-  padding: 0.7rem 1.5rem;
+  padding: 0.7rem 0rem;
+  width: 200%;
   margin-right: 1rem;
-  margin-left: 1rem;
 }
 
 .c-left___genres__button:hover {
