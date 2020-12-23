@@ -10,7 +10,48 @@
   flex-direction: row;
 }
 
+
 .c-user__info{
+
+    &--image{
+        border: 5px solid white;
+        border-radius: 10px;
+        width: 20rem;
+        height: 30rem;
+        margin-bottom: ;
+    }
+
+    &--image-img{
+        width: 15rem;
+        margin-top: 5.5rem;
+        margin-left: 2.2rem;
+
+    }
+
+    &--label{
+        color: $color-white;
+        font-weight: $font-weight-bold;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    &--input{
+        background-color: $color-white;
+        width: 35rem;
+        height: 3.56rem;
+        margin-bottom: 3.2rem;
+        border-radius: 10px;
+        border: none;
+        padding-left: 8px;
+        box-shadow: none;
+
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+.c-user__data{
     font-family: $font-family;
     &--title{
         color: $color-white;
@@ -39,7 +80,13 @@
         height: 3.56rem;
         margin-bottom: 3.2rem;
         border-radius: 10px;
+        border: none;
         padding-left: 8px;
+        box-shadow: none;
+
+        &:focus{
+            outline: none;
+        }
     }
     
 }
