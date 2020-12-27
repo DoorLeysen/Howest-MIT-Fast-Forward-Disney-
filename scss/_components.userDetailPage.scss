@@ -13,17 +13,19 @@
 
 .c-user__info{
 
+    margin-right: 10rem;
+
     &--image{
         border: 5px solid white;
         border-radius: 10px;
         width: 20rem;
-        height: 30rem;
-        margin-bottom: ;
+        height: 25rem;
+        margin-bottom: 3.2rem;
     }
 
     &--image-img{
         width: 15rem;
-        margin-top: 5.5rem;
+        margin-top: 3.7rem;
         margin-left: 2.2rem;
 
     }
@@ -57,6 +59,7 @@
         color: $color-white;
         font-size: 2.5rem;
         font-weight: $font-weight-bold;
+        margin-bottom: 5rem;
 
         &--adres{
             color: $color-white;
@@ -86,6 +89,29 @@
 
         &:focus{
             outline: none;
+        }
+    }
+
+    &--button{
+        background-color: $color-lightblue ;
+        color: $color-white;
+        font-weight: bold;
+        border-radius: 10px;
+        border:none;
+        width: 15rem;
+        margin-bottom: 5rem;
+        padding: 5px 0px;
+
+        &:hover{
+            color: $color-darkblue ;
+        }
+
+        &:focus{
+            outline: none;
+        }
+
+        &:active{
+            color: $color-black;
         }
     }
     

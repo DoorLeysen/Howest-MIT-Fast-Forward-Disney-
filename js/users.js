@@ -3,10 +3,7 @@
 //functie verwerkenhowestdata
 const verwerkenUserData = function (jsonUserData) {
   console.log("*********");
-  //variabelen inhoud en lokaal maken en opvullen
-  const firstName = jsonUserData.users[0].firstName;
-  const lastName = jsonUserData.users[0].lastName;
-  const id = 
+
   //uitvoer van inhoud en lokaal
   /*console.log(
     `naam user ${firstName} ${lastName}`

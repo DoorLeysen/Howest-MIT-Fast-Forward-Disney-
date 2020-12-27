@@ -178,47 +178,52 @@
             <form class="c-user__info--form">
                 <div class="c-user__info">
                     <div class="c-user__info--image">
-                        <img class="c-user__info--image-img"src="icons/user.svg" alt="">
+                        <img class="c-user__info--image-img" src="icons/user.svg" alt="">
                     </div>
-                    <label class="c-user__info--label" for="fname">Created</label><br>
-                    <input class="c-user__info--input" type="text" id="fname" name="fname" value="John" disabled><br>
-                    <label class="c-user__info--label" for="fname">Status</label><br>
-                    <input class="c-user__info--input" type="text" id="fname" name="fname" value="John" disabled><br>
-                    <label class="c-user__info--label" for="fname">LasLogin</label><br>
-                    <input class="c-user__info--input" type="text" id="fname" name="fname" value="John" disabled><br>
-                    <label class="c-user__info--label" for="fname">PaymentMethod</label><br>
-                    <input class="c-user__info--input" type="text" id="fname" name="fname" value="John" disabled><br>
+                    <label class="c-user__info--label" for="created">Created</label><br>
+                    <input class="c-user__info--input" type="date" id="created" name="created" disabled><br>
+                    <label class="c-user__info--label" for="status">Status</label><br>
+                    <input class="c-user__info--input" type="text" id="status" name="status" value="John" disabled><br>
+                    <label class="c-user__info--label" for="login">LasLogin</label><br>
+                    <input class="c-user__info--input" type="date" id="login" name="login" disabled><br>
+                    <label class="c-user__info--label" for="paymentmethod">PaymentMethod</label><br>
+                    <input class="c-user__info--input" type="text" id="paymentmethod" name="paymentmethod" value="John"
+                        disabled><br>
                 </div>
             </form>
 
             <div class="c-user__data">
                 <h2 class="c-user__data--title"> User data</h2>
-                <form class="c-user__data">
+                <form  class="c-user__data" method="get" action="UserManagement.html">
                     <label class="c-user__data--label" for="ID">ID</label><br>
-                    <input type="text" id="id" name="id" value="1" disabled><br>
+                    <input class="c-user__info--input" type="number" id="id" name="id" value="1" disabled><br>
                     <label class="c-user__data--label" for="title">Title</label><br>
-                    <select id="title" name="title">
+                    <select class="c-user__info--input" id="title" name="title">
                         <option value="volvo">Mevr</option>
                         <option value="saab">Dhr</option>
                     </select><br>
-                    <label class="c-user__data--label" for="Firstname">First name</label><br>
-                    <input class="c-user__data--input" type="text" id="Firstname" name="Firstname" value="John"><br>
+                    <label class="c-user__data--label" for="firstname">First name</label><br>
+                    <input class="c-user__data--input" type="text" id="firstname" name="firstname" value="John"><br>
                     <label class="c-user__data--label" for="lastname">Last name</label><br>
                     <input class="c-user__data--input" type="text" id="lastname" name="lastname" value="carter"><br>
                     <label class="c-user__data--label" for="email">Email</label><br>
                     <input class="c-user__data--input" type="email" id="email" name="email"
                         value="John.carten@hotmail.com"><br>
+                    <label class="c-user__data--label" for="tel">Phonenumber</label><br>
+                    <input class="c-user__data--input" type="tel" id="tel" name="tel"
+                        value="056 254 06 87"><br>
                     <h3 class="c-user__data--title--adres">Adress</h3>
                     <label class="c-user__data--label" for="street">Street</label><br>
                     <input class="c-user__data--input" type="text" id="street" name="street" value="lodonstreet"><br>
                     <label class="c-user__data--label" for="housenumber">House number</label><br>
-                    <input class="c-user__data--input" type="text" id="housenumber" name="housenumber" value="31"><br>
+                    <input class="c-user__data--input" type="number" id="housenumber" name="housenumber" value="31"><br>
                     <label class="c-user__data--label" for="city">City</label><br>
                     <input class="c-user__data--input" type="text" id="city" name="city" value="londen"><br>
                     <label class="c-user__data--label" for="zipcode">ZipCode</label><br>
-                    <input class="c-user__data--input" type="text" id="zipcode" name="zipcode" value="8258"><br>
+                    <input class="c-user__data--input" type="number" id="zipcode" name="zipcode" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" value="8258"><br>
                     <label class="c-user__data--label" for="country">Country</label><br>
                     <input class="c-user__data--input" type="text" id="country" name="country" value="UK"><br>
+                    <button class="c-user__data--button" type="submit">Save changes</button>
                 </form>
             </div>
         </div>
