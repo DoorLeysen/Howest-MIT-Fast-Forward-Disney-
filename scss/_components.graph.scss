@@ -45,11 +45,11 @@
   }
 
   @include media-breakpoint-down(md) {
-    max-width: 30rem;
+    max-width: 40rem;
   }
 
   @include media-breakpoint-down(sm) {
-    max-width: 20rem;
+    display: none;
   }
 
 }

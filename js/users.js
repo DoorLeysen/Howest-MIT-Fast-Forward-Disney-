@@ -86,7 +86,7 @@ let HaalIdOpUitQueryString = function () {
 
   if (idVanUser) {
     UserID = idVanUser;
-    laadUserDataDetail();
+    laadUserData();
     console.log(`Het id van de gekozen user is ${idVanUser}`);
   } else {
     console.log("De querystring ontbreekt");
@@ -94,38 +94,9 @@ let HaalIdOpUitQueryString = function () {
 };
 
 
-const laadUserDataDetail = function () {
-  //ophalen interne JSON file
-  fetch("data/users.json")
-    .then(function (response) {
-      //antwoord van de server nakijken op het verzoek
-      if (!response.ok) {
-        //antwoord is niet ok. error wordt geworpen
-        throw Error(`Probleem bij de fetch(). Status Code: ${response.status}`);
-      } else {
-        //antwoord is ok
-        console.info("Er is een response teruggekomen van de server");
-        return response.json();
-      }
-    })
-    .then(function (data) {
-      //functie uitgevoerd en json maken
-      console.info("json object is aangemaakt");
-      //functie verwerkenUserData uitvoeren
-      ToonDetailUser(data);
-    })
-    //als uitvoeren op een fout loopt
-    .catch(function (error) {
-      console.error(`fout bij verwerken json ${error}`);
-    });
-};
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   console.info("DOM geladen");
   HaalIdOpUitQueryString();
   laadUserData();
-  laadUserDataDetail();
 
 });
