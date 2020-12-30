@@ -24,7 +24,7 @@
     <!-- Hier komt nog de header -->
     <!-- Hier komt nog de navigatie -->
     <nav class="c-nav">
-        <input class="c-nav__toggle js-nav-toggle" type="checkbox">
+        <input class="c-nav__toggle js-nav-toggle" type="checkbox" />
         <div class="c-nav__bars">
             <div class="c-nav__bar c-nav__bar--small"></div>
             <div class="c-nav__bar c-nav__bar--big"></div>
@@ -85,7 +85,7 @@
                 </svg>
                 <span class="c-nav__info">User management</span>
             </a>
-            <a href="editpage.html" class="c-nav__item">
+            <a href="movies-and-series.html" class="c-nav__item">
                 <svg class="c-nav__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48.037">
                     <g transform="translate(1.948 28.014)">
                         <path
@@ -132,11 +132,28 @@
                 </svg>
                 <span class="c-nav__info">Movies &amp; Series</span>
             </a>
+            <a href="settings.html" class="c-nav__item">
+                <svg class="c-nav__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z">
+                    </path>
+                </svg>
+                <span class="c-nav__info">Settings</span>
+            </a>
+            <a href="set-start-screen.html" class="c-nav__item">
+                <svg class="c-nav__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M507.73 109.1c-2.24-9.03-13.54-12.09-20.12-5.51l-74.36 74.36-67.88-11.31-11.31-67.88 74.36-74.36c6.62-6.62 3.43-17.9-5.66-20.16-47.38-11.74-99.55.91-136.58 37.93-39.64 39.64-50.55 97.1-34.05 147.2L18.74 402.76c-24.99 24.99-24.99 65.51 0 90.5 24.99 24.99 65.51 24.99 90.5 0l213.21-213.21c50.12 16.71 107.47 5.68 147.37-34.22 37.07-37.07 49.7-89.32 37.91-136.73zM64 472c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z">
+                    </path>
+                </svg>
+                <span class="c-nav__info">Set Start Screen</span>
+            </a>
         </nav>
         <footer class="c-nav__footer">
             <p class="c-nav__footer-copyright">&copy; copyright 2020</p>
             <p class="c-nav__footer-phone-helpdesk">
-                Help Desk: <a class="c-nav__footer-phone-helpdesk-link" href="+32 4 99 88 99 88">+32 4 99 88 99 88</a>
+                Help Desk:
+                <a class="c-nav__footer-phone-helpdesk-link" href="+32 4 99 88 99 88">+32 4 99 88 99 88</a>
             </p>
         </footer>
     </nav>
@@ -158,59 +175,58 @@
         </h1>
 
         <div class="c-user__form">
-            <form class="c-user__data">
-                <div class="c-user__data">
-                    <div class="c-user__image">
-                        <img src="icons/user.svg" alt="user-image">
+            <form class="c-user__info--form">
+                <div class="c-user__info">
+                    <div class="c-user__info--image">
+                        <img class="c-user__info--image-img" src="icons/user.svg" alt="">
                     </div>
-                    <label for="fname">Created</label><br>
-                    <input type="text" id="fname" name="fname" value="John" disabled><br>
-                    <label for="fname">Status</label><br>
-                    <input type="text" id="fname" name="fname" value="John" disabled><br>
-                    <label for="fname">LasLogin</label><br>
-                    <input type="text" id="fname" name="fname" value="John" disabled><br>
-                    <label for="fname">PaymentMethod</label><br>
-                    <input type="text" id="fname" name="fname" value="John" disabled><br>
+                    <label class="c-user__info--label" for="created">Created</label><br>
+                    <input class="c-user__info--input" type="date" id="created" name="created" disabled><br>
+                    <label class="c-user__info--label" for="status">Status</label><br>
+                    <input class="c-user__info--input" type="text" id="status" name="status" value="Active" disabled><br>
+                    <label class="c-user__info--label" for="login">LasLogin</label><br>
+                    <input class="c-user__info--input" type="date" id="login" name="login" disabled><br>
+                    <label class="c-user__info--label" for="paymentmethod">PaymentMethod</label><br>
+                    <input class="c-user__info--input" type="text" id="paymentmethod" name="paymentmethod" value="Visa"
+                        disabled><br>
+                </div>
             </form>
+
+            <div class="c-user__data">
+                <h2 class="c-user__data--title"> User data</h2>
+                <form  class="c-user__data" method="get" action="UserManagement.html">
+                    <label class="c-user__data--label" for="ID">ID</label><br>
+                    <input class="c-user__info--input" type="number" id="id" name="id" value="1" disabled><br>
+                    <label class="c-user__data--label" for="title">Title</label><br>
+                    <select class="c-user__info--input" id="title" name="title">
+                        <option value="Dhr">Dhr</option>
+                        <option value="Mevr">Mevr</option>
+                    </select><br>
+                    <label class="c-user__data--label " for="firstname">First name</label><br>
+                    <input class="c-user__data--input js-user__firstname" type="text" id="firstname" name="firstname" value="John"><br>
+                    <label class="c-user__data--label" for="lastname">Last name</label><br>
+                    <input class="c-user__data--input js-user__lastname" type="text" id="lastname" name="lastname" value="carter"><br>
+                    <label class="c-user__data--label" for="email">Email</label><br>
+                    <input class="c-user__data--input js-user__email" type="email" id="email" name="email"
+                        value="John.carten@hotmail.com"><br>
+                    <label class="c-user__data--label" for="tel">Phonenumber</label><br>
+                    <input class="c-user__data--input js-user__phonenumber" type="tel" id="tel" name="tel"
+                        value="056 254 06 87"><br>
+                    <h3 class="c-user__data--title--adres">Adress</h3>
+                    <label class="c-user__data--label" for="street">Street</label><br>
+                    <input class="c-user__data--input" type="text" id="street" name="street" value="lodonstreet"><br>
+                    <label class="c-user__data--label" for="housenumber">House number</label><br>
+                    <input class="c-user__data--input" type="number" id="housenumber" name="housenumber" value="31"><br>
+                    <label class="c-user__data--label" for="city">City</label><br>
+                    <input class="c-user__data--input" type="text" id="city" name="city" value="londen"><br>
+                    <label class="c-user__data--label" for="zipcode">ZipCode</label><br>
+                    <input class="c-user__data--input" type="number" id="zipcode" name="zipcode" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" value="8258"><br>
+                    <label class="c-user__data--label" for="country">Country</label><br>
+                    <input class="c-user__data--input" type="text" id="country" name="country" value="UK"><br>
+                    <button class="c-user__data--button" type="submit">Save changes</button>
+                </form>
+            </div>
         </div>
-        <div class="c-user__info">        
-            <h2 class="c-user__info--title"> User info</h2>
-            <form class="c-user__info">
-                <label class="c-user__info--label" for="ID">ID</label><br>
-                <input type="text" id="id" name="id" value="1" disabled><br>
-                <label class="c-user__info--label" for="title">Title</label><br>
-                <select id="title" name="title">
-                    <option value="volvo">Mevr</option>
-                    <option value="saab">Dhr</option>
-                </select><br>
-                <label class="c-user__info--label" for="Firstname">First name</label><br>
-                <input class="c-user__info--input" type="text" id="Firstname" name="Firstname" value="John"><br>
-                <label class="c-user__info--label" for="lastname">Last name</label><br>
-                <input class="c-user__info--input" type="text" id="lastname" name="lastname" value="carter"><br>
-                <label class="c-user__info--label" for="email">Email</label><br>
-                <input class="c-user__info--input" type="email" id="email" name="email"
-                    value="John.carten@hotmail.com"><br>
-                <h3 class="c-user__info--title--adres">Adress</h3>
-                <label class="c-user__info--label" for="street">Street</label><br>
-                <input class="c-user__info--input" type="text" id="street" name="street" value="lodonstreet"><br>
-                <label class="c-user__info--label" for="housenumber">House number</label><br>
-                <input class="c-user__info--input" type="text" id="housenumber" name="housenumber" value="31"><br>
-                <label class="c-user__info--label" for="city">City</label><br>
-                <input class="c-user__info--input" type="text" id="city" name="city" value="londen"><br>
-                <label class="c-user__info--label" for="zipcode">ZipCode</label><br>
-                <input class="c-user__info--input" type="text" id="zipcode" name="zipcode" value="8258"><br>
-                <label class="c-user__info--label" for="country">Country</label><br>
-                <input class="c-user__info--input" type="text" id="country" name="country" value="UK"><br>
-            </form>
-        </div>
-        </div>
-
-
-
-
-
-
-
 
     </main>
 </body>
