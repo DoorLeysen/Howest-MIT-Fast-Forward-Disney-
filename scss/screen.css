@@ -13528,6 +13528,37 @@ a {
   background-color: #2642B1;
 }
 
+.c-startscherm {
+  margin-left: 3rem;
+  color: #ffffff;
+}
+
+@media (max-width: 991.98px) {
+  .c-startscherm {
+    text-align: center;
+    margin-left: 0rem;
+  }
+}
+
+.c-startscherm--title {
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 3rem 0px;
+  padding-top: 1rem;
+}
+
+.c-startscherm--featured {
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 991.98px) {
+  .c-startscherm--film {
+    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+  }
+}
+
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/

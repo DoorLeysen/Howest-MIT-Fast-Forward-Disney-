@@ -1,0 +1,25 @@
+.c-startscherm{
+    margin-left: 3rem;
+    color: $color-white;
+    @include media-breakpoint-down(md) {
+        text-align: center;
+        margin-left: 0rem;
+      }
+    &--title{
+        color: $color-white;
+        font-size: 4rem;
+        font-weight: bold;
+        padding:3rem 0px;
+        padding-top: 1rem;
+    }
+    &--featured{
+        padding-bottom: 1rem;
+    }
+    &--film{
+        @include media-breakpoint-down(md) {
+            padding-bottom: 1rem;
+            padding-top: 1.5rem;
+          }
+      
+    }
+}
