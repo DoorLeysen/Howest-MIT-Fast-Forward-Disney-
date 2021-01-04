@@ -1,6 +1,6 @@
 .c-settings{
     color: $color-white;
-    width: 100vw;
+    overflow-x: hidden;
 
     &__title{
         color: $color-white;
@@ -9,16 +9,36 @@
     }
 
     &--flex{
-        width: 100%;
         display: flex;
         justify-content: space-between;
+        // flex-direction: column;
+        // flex-wrap: wrap;
+        
+        // @include media-breakpoint-up(lg){
+        //     flex-direction: row;
+        // }
     }
 
     &__box{
         background: linear-gradient(#203174, #5E7BE4);
-        padding: 2rem;
+        padding: 2rem 2rem;
         border-radius: 20px;
         margin-bottom: 40px;
+
+        // @include media-breakpoint-up(sm){
+        //     margin-left: auto;
+        //     margin-right: auto;
+        // }
+
+        // @include media-breakpoint-up(md){
+
+        // }
+
+        // @include media-breakpoint-up(lg){
+        //     padding: 2rem 4rem;
+        //     margin-left: 0;
+        //     margin-right: 0;
+        // }
     }
 
     &__label{
@@ -31,13 +51,31 @@
         padding-left: 10px;
         width: 100%;
         margin-bottom: 2rem;
-        &--percentage {
-            display: inline;
-            width: 90%;
-            margin-right: 10px;
-        };
         &:focus{
             border:  #0090FF solid 3px;
+        }
+    }
+
+    &__select{
+        appearance: none;
+        display: block;
+        border-radius: 10px;
+        padding-left: 10px;
+        width: 100%;
+        margin-bottom: 2rem;
+        
+        &--container{
+            position: relative;
+        }
+
+        &--icon {
+            position: absolute;
+            top: 2px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            color: black;
+            pointer-events: none;
         }
     }
 
@@ -49,6 +87,11 @@
         padding: 1rem 5rem;
         border-radius: 10px;
         float: right;
+        margin-bottom: 2rem;
+
+        @include media-breakpoint-up(xl){
+            margin-right: 3rem;
+        }
         
         &:hover{
             background-color: #2642B1;
