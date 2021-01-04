@@ -13470,17 +13470,10 @@ a {
 
 .c-settings__title {
   color: #ffffff;
-  font-size: 9rem;
-  margin-bottom: 10rem;
-}
-
-.c-settings--flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  font-size: 3rem;
+  margin-left: 5.4rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 
 .c-settings__box {
@@ -13543,18 +13536,13 @@ a {
   margin-bottom: 2rem;
 }
 
-@media (min-width: 1200px) {
-  .c-settings__button {
-    margin-right: 3rem;
-  }
-}
-
 .c-settings__button:hover {
   background-color: #2642B1;
 }
 
 .c-startscherm {
   margin-left: 3rem;
+  margin-bottom: 3rem;
   color: #ffffff;
 }
 
@@ -13567,7 +13555,7 @@ a {
 
 .c-startscherm--title {
   color: #ffffff;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   padding: 3rem 0px;
   padding-top: 1rem;
@@ -13582,6 +13570,64 @@ a {
     padding-bottom: 1rem;
     padding-top: 1.5rem;
   }
+}
+
+.c-startscherm__box {
+  background: -webkit-gradient(linear, left top, left bottom, from(#203174), to(#5E7BE4));
+  background: linear-gradient(#203174, #5E7BE4);
+  padding: 2rem 2rem;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.c-startscherm__box h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.c-startscherm__label {
+  display: block;
+}
+
+.c-startscherm__select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+  border-radius: 10px;
+  padding-left: 10px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.c-startscherm__select--container {
+  position: relative;
+}
+
+.c-startscherm__select--icon {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  color: black;
+  pointer-events: none;
+}
+
+.c-startscherm__button {
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #0090FF;
+  border: none;
+  padding: 1rem 5rem;
+  border-radius: 10px;
+  float: right;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.c-startscherm__button:hover {
+  background-color: #2642B1;
 }
 
 /*------------------------------------*\
